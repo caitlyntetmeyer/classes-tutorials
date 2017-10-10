@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Instructions: https://threejs.org/docs/#manual/introduction/Creating-a-scene -->
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>three.js Cube Animation</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			/*
+			Set up our camera using these attributes:
+				"75" is the field of view.
+				"window.innerWidth / window.innerHeight" is the aspect ratio.
+				"0.1" is the near clipping pane, and
+				"1000" is the far clipping pane. (Objects further away from the camera than the value of "far," or closer to the camera than "near," won't be rendered.)
+			*/
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+			var renderer = new THREE.WebGLRenderer();
+			// Render the app as being the size of the browser window:
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			// Add the renderer element to our HTML document:
+			document.body.appendChild( renderer.domElement );
+
+			// Add the cube:
+			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			var material = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
+			var cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			camera.position.z = 3; // A larger number means the camera is farther away from the cube.
+
+			// Create a loop that causes the renderer to draw the scene 60 times/second.
+			// Anything you want to move or change while the app is running has to go through the animate loop:
+			function animate() {
+				requestAnimationFrame( animate );
+				cube.rotation.x += 0.1; // Rotate cube on its x axis
+				cube.rotation.y += 0.1; // Rotate cube on its y axis
+				renderer.render( scene, camera );
+			}
+
+			// Call the function!
+			animate();
+		</script>
+	</body>
+</html>
