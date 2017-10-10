@@ -23,11 +23,10 @@ Preparation and Planning
 https://teamtreehouse.com/library/preparation-and-planning
 
 Four P's of Problem Solving:
-
-1) Prepare - This is where we understand and diagnose the problem.
-2) Plan - This is where we organize everything before acting.
-3) Perform - We simply put the plan into action.
-4) Perfect - This is when we check to see if what we made has solved the problem and consider how to make it better. We can use the Four P's again to make improvements.
+    1) Prepare - This is where we understand and diagnose the problem.
+    2) Plan - This is where we organize everything before acting.
+    3) Perform - We simply put the plan into action.
+    4) Perfect - This is when we check to see if what we made has solved the problem and consider how to make it better. We can use the Four P's again to make improvements.
  */
 
 class Program

@@ -1,0 +1,6 @@
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/bin/Debug/HelloWorld.exe.config
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/bin/Debug/HelloWorld.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/bin/Debug/HelloWorld.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/obj/Debug/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/obj/Debug/HelloWorld.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_03/HelloWorld/HelloWorld/obj/Debug/HelloWorld.pdb
