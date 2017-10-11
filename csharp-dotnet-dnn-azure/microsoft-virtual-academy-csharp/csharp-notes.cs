@@ -9,7 +9,6 @@
  * Purpose of .NET Framework Runtime (Common Language Runtime, or CLR): 
  *  Runs the code
  *  Provides services that make the dev process easier
- * 
  * The result of compiling your source code is called a .NET Assembly.
  * 
  * Opening and closing curly braces define: ___
