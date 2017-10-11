@@ -50,6 +50,24 @@ namespace Decisions
 
             Console.ReadLine();
 
+            /*
+            int userValue = 2;
+            string message = (userValue == 1) ? "boat" : "car";
+            Console.WriteLine("{1} - {0}", userValue, message); // car - 2
+            */
+
+            /* Q: What is wrong with the following code?
+
+            if (userValue == "Bob")
+                myValue = "You typed 'Bob'";
+            else
+                myValue = "You typed 'Steve'";
+            else if (userValue == "Brian")
+                myValue = "You typed 'Brian'";
+
+            A: The else statement should not come before else if statement */
+
+
         }
     }
 }
