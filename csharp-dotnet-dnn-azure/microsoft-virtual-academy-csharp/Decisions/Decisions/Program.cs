@@ -35,8 +35,19 @@ namespace Decisions
             Console.Write("Choose a door: 1, 2 or 3: ");
             string userValue = Console.ReadLine();
 
+            //If user enters 1, they win a "boat" (after the "?"). Otherwise (after the ":"), they win a "strand of lint":
             string message = (userValue == "1") ? "boat" : "strand of lint";
-            Console.Write("You won a " + message + ".");
+
+            //Console.Write("You won a ");
+            //Console.Write(message);
+            //Console.Write(".");
+
+            //The "{0}" will be replaced with the message:
+            //Console.WriteLine("You won a {0}.", message);
+
+            //The "{0}" will be replaced w/the user value. The "{1}" will be replaced w/the msg:
+            Console.WriteLine("You entered: {0}; therefore, you won a {1}.", userValue, message);
+
             Console.ReadLine();
 
         }
