@@ -11,20 +11,20 @@ namespace Variables
         static void Main(string[] args)
         {
             /*
-            int x; // In C#, an integer is a whole number between -2b 147m and 2b 147m.
+            int x; // In C#, an integer is a whole number between negative and positive 2 billion 147 million.
             int y;
 
             x = 7;
             y = x + 3;
 
-            Console.WriteLine(y);
+            Console.WriteLine(y); // 10
             Console.ReadLine();
             */
 
             Console.WriteLine("What is your name?");
             Console.Write("Type your first name: ");
             string myFirstName;
-            myFirstName = Console.ReadLine());
+            myFirstName = Console.ReadLine();
 
             string myLastName;
             Console.Write("Type your last name: ");            

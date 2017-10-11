@@ -38,3 +38,17 @@ namespace Variables
         }
     }
 }
+
+/* Q: Which line of code will allow you to retrieve an entry from a user into a variable called "userValue"?
+ * A: string userValue = Console.ReadLine();
+ * 
+ * Q: In the following code, why will this NOT work?
+ * int x = 44;
+ * string y = "Bob";
+ * int z = x + y;
+ * Console.WriteLine(z);
+ * A: You can't set an integer variable to the result of a concatenation/addition of a string and an integer
+ * 
+ * You CAN store whole numbers in a variable of type "int."
+ * You CAN'T store values greater than 3 billion (for example), decimal values, or alpha characters.
+ */
