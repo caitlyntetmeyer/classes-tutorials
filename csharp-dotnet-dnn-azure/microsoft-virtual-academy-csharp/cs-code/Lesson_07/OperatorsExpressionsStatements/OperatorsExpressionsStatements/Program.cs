@@ -81,12 +81,19 @@ namespace OperatorsExpressionsStatements
             // Also, here's the in-line conditional operator we 
             // learned about in the previous lesson ...
             string message = (x == 1) ? "Car" : "Boat";
+            // If x is equal to 1, the message is "Car". Otherwise, it's "Boat".
 
             // Member access and Method invocation
             Console.WriteLine("Hi");
+            // "Hi" is an input operator 
 
+            // This is not a valid statement in C#:
             x + y;
+            // The compiler won't know what you're trying to accomplish here (notice the red squiggly line).
 
         }
     }
 }
+
+/* Statements are made up of _expressions_.
+ * Expressions are made up of _operators and operands_. */
