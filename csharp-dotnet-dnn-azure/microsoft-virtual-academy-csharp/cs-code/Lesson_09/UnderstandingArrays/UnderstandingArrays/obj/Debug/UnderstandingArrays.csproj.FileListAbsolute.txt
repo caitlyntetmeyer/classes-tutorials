@@ -1,0 +1,6 @@
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/bin/Debug/UnderstandingArrays.exe.config
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/bin/Debug/UnderstandingArrays.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/bin/Debug/UnderstandingArrays.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/obj/Debug/UnderstandingArrays.csproj.CoreCompileInputs.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/obj/Debug/UnderstandingArrays.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_09/UnderstandingArrays/UnderstandingArrays/obj/Debug/UnderstandingArrays.pdb
