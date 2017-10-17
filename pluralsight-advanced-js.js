@@ -120,24 +120,26 @@ undefined - it WAS declared, but it has a special empty value
 
 Scope and Execution Example
 
-https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=3&mode=live
-*/
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=3&mode=live */
+
 var foo = "bar";
 
 function bar() {
-	var foo = "baz";
+	var foo = "baz"; // looks for var foo in the LOCAL scope first, then if it doesn't find it, it looks in the GLOBAL scope
 
 	function baz(foo) {
 		foo = "bam";
 		bam = "yay";
 	}
-	baz();
+	baz(); // executes the function baz()
 }
 
-bar();
-foo; // ???
-bam; // ???
-baz(); // ???
+// We're now in global scope.
+
+bar(); // executes the function "bar()" from line 127.
+foo; // "bar" - executes the "foo" in line 125 because we're in global scope.
+bam; // "yay" - global scope can't find "bam", and "bam" is an LHS (target) reference, so global scope automatically creates "bam".
+baz(); // global scope doesn't know what "baz()" is, and "baz()" is an RHS (source) reference, so we get an error.
 
 
 
