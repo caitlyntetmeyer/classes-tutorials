@@ -1,6 +1,0 @@
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/bin/Debug/ForIteration.exe.config
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/bin/Debug/ForIteration.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/bin/Debug/ForIteration.pdb
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/obj/Debug/ForIteration.csproj.CoreCompileInputs.cache
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/obj/Debug/ForIteration.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/microsoft-virtual-academy-csharp/cs-code/Lesson_08/ForIteration/ForIteration/obj/Debug/ForIteration.pdb

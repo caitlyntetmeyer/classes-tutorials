@@ -121,10 +121,16 @@ undefined - it WAS declared, but it has a special empty value
 Scope and Execution Example
 
 https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=3&mode=live
-
 */
+var foo = "bar";
 
+function bar() {
+	var foo = "baz";
+}
 
+function baz(foo) {
+	foo = "bam";
+	bam = "yay";
 
 
 
