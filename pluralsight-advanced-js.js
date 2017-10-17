@@ -139,7 +139,26 @@ function bar() {
 bar(); // executes the function "bar()" from line 127.
 foo; // "bar" - executes the "foo" in line 125 because we're in global scope.
 bam; // "yay" - global scope can't find "bam", and "bam" is an LHS (target) reference, so global scope automatically creates "bam".
-baz(); // global scope doesn't know what "baz()" is, and "baz()" is an RHS (source) reference, so we get an error.
+baz(); // global scope doesn't know what "baz()" is, and "baz()" is an RHS (source) reference, so we get an error. (We know "baz()" is an RHS reference because it's not an LHS reference.)
+
+/* Function Declarations, Function Expressions and Block Scope
+
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=4&mode=live 
+
+Q: Is function "bar()" a function _declaration_?
+A: No, because the word "function" is NOT the first word of the statement. */
+var foo = function bar() {
+	var foo = "baz";
+
+	function baz(foo) {
+		foo = bar;
+		foo; // function...
+	}
+	baz();
+};
+
+foo();
+bar(); // Error!
 
 
 
