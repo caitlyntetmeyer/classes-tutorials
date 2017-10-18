@@ -51,7 +51,7 @@ b = Number(a); // converts "42" to 42
 a = 42;
 a = a / 2;
 a = a + ""; 
-console.log(a); // 21  (printed in black because it's a screen)
+console.log(a); // 21  (printed in black because it's a string)
 
 // Make an "a" that can never be changed again (only in the newest versions of JS):
 const a = 42;
@@ -75,7 +75,7 @@ var b = 12;
 Comments should never say WHAT the code does - 
 the code _shows_ what it does. 
 Comments should say WHY and/or HOW.
-Be as verbose as necessary - no more, no less.
+Be exactly as verbose as necessary - no more, no less.
 */
 
 /*
@@ -204,7 +204,7 @@ for (a = 5; a < 10; a++) {
 
 // You could technically write (though it would be silly):
 for (;;) { }
-// This loop will run forever because ** a conditional will never fail.** NOT because it's always true.
+// This loop will run forever because ** a conditional will never fail **, NOT because it's always true.
 
 // This loop would run forever because it would never fail:
 for (a = 5; a < 10; a++) {
@@ -214,7 +214,7 @@ for (a = 5; a < 10; a++) {
 // 5 6 7 6 7 6 7 6...
 
 
-//  A LOOP RUNS FOREVER UNTIL SOMETHING TELLS IT TO STOP
+// A LOOP RUNS FOREVER UNTIL SOMETHING TELLS IT TO STOP
 
 // Illustration of what for loops do (don't write loops like this):
 a = 5;
