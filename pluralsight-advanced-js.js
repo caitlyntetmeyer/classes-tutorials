@@ -144,10 +144,8 @@ baz(); // global scope doesn't know what "baz()" is, and "baz()" is an RHS (sour
 /* Function Declarations, Function Expressions and Block Scope
 
 https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=4&mode=live 
-
-Q: Is function "bar()" a function _declaration_?
-A: No, because the word "function" is NOT the first word of the statement. */
-var foo = function bar() {
+*/
+var foo = function bar() { // Since "function" is not the first word of the statement, we know that "bar()" is a function _expression_, NOT a function _declaration_.
 	var foo = "baz";
 
 	function baz(foo) {
@@ -158,7 +156,30 @@ var foo = function bar() {
 };
 
 foo();
-bar(); // Error!
+bar(); // ReferenceError - because "bar()" not a function _declaration_ (we know it's not because the word "function" is NOT the first word of the statement on line 148)
+
+/* Using an anonymous (unnamed) function expression is bad. 
+Don't do that.  
+It won't play well in debugging. 
+So give it a descriptive name! 
+
+---
+
+New Slide: "Scope: block scope?"
+
+As of ES3, when "try" and "catch" were added: Those are BLOCK SCOPE.
+IE6 screwed this up, but IE7 and above, and all other browsers, have it right.
+*/
+var foo;
+
+try {
+	foo.length;
+}
+catch (err) {
+	console.log(err); // TypeError
+}
+
+console.log(err); // ReferenceError
 
 
 
