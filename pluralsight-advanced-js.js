@@ -181,7 +181,21 @@ catch (err) {
 
 console.log(err); // ReferenceError
 
+/* Lexical Scope
 
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=5&mode=live
+
+lex - the parsing stage called "lexing," so...
+
+lexical scope - compile-time scope - at the time you wrote your code and the code got compiled, all decisions were set in stone by the compiler
+
+---
+
+Cheating Lexical Scopt: eval
+
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=6&mode=live
+
+*/
 
 
 
