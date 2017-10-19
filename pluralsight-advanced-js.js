@@ -183,8 +183,6 @@ console.log(err); // ReferenceError
 
 /* Lexical Scope
 
-https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=5&mode=live
-
 lex - the parsing stage called "lexing," so...
 
 lexical scope - compile-time scope - at the time you wrote your code and the code got compiled, all decisions were set in stone by the compiler
@@ -193,11 +191,41 @@ lexical scope - compile-time scope - at the time you wrote your code and the cod
 
 Cheating Lexical Scopt: eval
 
-https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=6&mode=live
+The "eval" keyword takes a string and treats it as if it were code at runtime. So "eval" _modifies the code at runtime_ to include the string as if it had been written as code back at author-time. */
+var bar = "bar";
 
-*/
+function foo(str) {
+	eval(str) // cheating (modifies it at runtime) - this slows down your code - don't use it
+	console.log(bar); // 42
+}
 
+foo("var bar = 42;");
 
+// IIFE Pattern:
+
+var foo = "foo";
+
+(function() {
+	var foo = "foo2";
+	console.log(foo); // "foo2"
+})();
+
+console.log(foo); // "foo"
+
+// Function Scope:
+
+var foo = "foo";
+
+(function(bar) {
+	var foo = bar;
+	console.log(foo); // "foo"
+})(foo);
+
+console.log(foo); // "foo"
+
+// Block Scope in ES6:
+
+// The "let" keyword is similar to "var" in that it'll declare a variable - however, the "let" keyword will attach that variable implicitly to whatever block of code it appears in, rather than attaching it to the function.
 
 
 
