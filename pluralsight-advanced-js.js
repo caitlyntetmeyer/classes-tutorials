@@ -223,16 +223,31 @@ var foo = "foo";
 
 console.log(foo); // "foo"
 
-// Block Scope in ES6:
+/* Block Scope in ES6:
 
-// The "let" keyword is similar to "var" in that it'll declare a variable - however, the "let" keyword will attach that variable implicitly to whatever block of code it appears in, rather than attaching it to the function.
+The "let" keyword is similar to "var" in that it'll declare a variable - however, the "let" keyword will attach that variable implicitly to whatever block of code it appears in, rather than attaching it to the function. */
+function foo() {
+	var bar = "bar";
+	for (let i=0; i<bar.length; i++) {
+		console.log(bar.charAt(i));
+	}
+	console.log(i); // ReferenceError
+}
 
+foo();
+/* "let" doesn't allow hoisting, which is a problem.
 
+---
 
+Here's some code transpiled by the tool let-er: */
 
+try{throw void 0}catch
+/*let*/(foo) {
+	foo = "foo";
+	console.log(foo);
+}
 
-
-
+foo; // Reference Error!
 
 
 
