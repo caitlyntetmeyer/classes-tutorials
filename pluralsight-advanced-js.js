@@ -183,13 +183,13 @@ console.log(err); // ReferenceError
 
 /* Lexical Scope
 
-lex - the parsing stage called "lexing," so...
+lex - the parsing stage is called "lexing," so...
 
 lexical scope - compile-time scope - at the time you wrote your code and the code got compiled, all decisions were set in stone by the compiler
 
 ---
 
-Cheating Lexical Scopt: eval
+Cheating Lexical Scope: eval
 
 The "eval" keyword takes a string and treats it as if it were code at runtime. So "eval" _modifies the code at runtime_ to include the string as if it had been written as code back at author-time. */
 var bar = "bar";
@@ -249,11 +249,55 @@ try{throw void 0}catch
 
 foo; // Reference Error!
 
+/* Quiz
+
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=12&mode=live
+
+Q: What type of scoping rule does JS have?
+A: Lexical scoping
+
+Q: What are exceptions to the lexical scoping rule?
+A: "eval" and the "with" keyword
+
+Q: What are the different ways you can create a new scope?
+A: functions, catch blocks, curly braces w/the "let" keyword
+
+Q: What's the difference between "undeclared" and "undefined"?
+A: undeclared - there's no present value for this because it hasn't been declared yet. undefined - it WAS declared, but it has a special empty value
 
 
+---
 
+Hoisting
 
+https://app.pluralsight.com/player?course=advanced-javascript&author=kyle-simpson&name=advanced-javascript-m2&clip=13&mode=live 
 
+Hoisting isn't really a thing. It's just a conceptual model.
+
+Lines 280-285:
+Q: "What's the value of the variable on each line? How is each line going to execute?" 
+A: The compiler will go through and compile everything first. So it will symbolically hoist the "var" lines up to the top. That way, each line will execute as if the "var" lines had come first. */
+a;
+b;
+var a = b;
+var b = 2;
+b;
+a;
+
+// Q: How would this execute?
+var a = b();
+var c = d();
+a;
+c;
+
+function b() {
+	return c;
+}
+
+var d = function() {
+	return b();
+};
+// A: Named functions are moved to the top first, then variables under the functions. Anonymous functions don't get hoisted (so the "var d" chunk would stay at the bottom).
 
 
 
