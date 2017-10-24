@@ -297,11 +297,54 @@ function b() {
 var d = function() {
 	return b();
 };
-// A: Named functions are moved to the top first, then variables under the functions. Anonymous functions don't get hoisted (so the "var d" chunk would stay at the bottom).
+// A: Named functions are moved to the top first, then variables under the functions. Anonymous functions don't get hoisted (so, the "var d" chunk would stay at the bottom).
 
+// Hoisting: functions first
+foo(); // "foo" 
 
+var foo = 2;
 
+function foo() {
+	console.log("bar");
+}
 
+function foo() {
+	console.log("foo");
+}
+
+/* 
+
+Recursion is when a function calls itself.
+Mutual recursion refers to two or more functions calling each other.
+
+Q: Why does JavaScript do hoisting?
+A: This makes mutual recursion possible. 
+
+Example: */
+a(1);
+
+function a(foo) {
+	if (foo > 20) return foo;
+	return b(foo+2);
+}
+function b(foo) {
+	return c(foo) + 1;
+}
+
+// Scope: hoisting
+function b() {
+	return c;
+}
+var a;
+var c;
+var d;
+a = b();
+c = d();
+a;
+c;
+d = function() {
+	return b();
+};
 
 
 
