@@ -1,0 +1,10 @@
+<xmod:JsonFeed>
+
+	<ListDataSource CommandText="sp_Select_Contacts" CommandType="StoredProcedure">
+    <Parameter Name="SortOn" Value='[[Form:sortOn]]' DataType="Int32" />
+    <Parameter Name="SortDesc" Value='[[Form:sortDesc]]' DataType="Int32" />
+    <Parameter Name="Query" Value='[[Form:query]]' DataType="String" Size="100"/>
+    <Parameter Name="PageSize" Value='[[Form:pageSize]]' DataType="Int32" />
+    <Parameter Name="PageNum" Value='[[Form:pageNum]]' DataType="Int32" />
+ </ListDataSource>
+</xmod:JsonFeed>
