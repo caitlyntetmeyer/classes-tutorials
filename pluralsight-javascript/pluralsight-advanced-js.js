@@ -299,6 +299,7 @@ var d = function() {
 };
 // A: Named functions are moved to the top first, then variables under the functions. Anonymous functions don't get hoisted (so, the "var d" chunk would stay at the bottom).
 
+
 // Hoisting: functions first
 foo(); // "foo" 
 
@@ -318,7 +319,7 @@ Recursion is when a function calls itself.
 Mutual recursion refers to two or more functions calling each other.
 
 Q: Why does JavaScript do hoisting?
-A: This makes mutual recursion possible. 
+A: This makes mutual recursion possible.
 
 Example: */
 a(1);
@@ -346,8 +347,15 @@ d = function() {
 	return b();
 };
 
+// "let" gotcha - illustrates the temporal dead zone (lines 352-354):
+function foo(bar) {
+	if (bar) {
+		console.log(baz); // ReferenceError because of temporal dead zone
+		let baz = bar;
+	}
+}
 
-
+foo("bar");
 
 
 
