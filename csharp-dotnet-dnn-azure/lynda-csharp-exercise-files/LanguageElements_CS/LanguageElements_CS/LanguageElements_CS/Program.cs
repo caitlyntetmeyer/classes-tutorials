@@ -86,32 +86,32 @@ namespace LanguageElements_CS
 
             #region Decision Structures
             // if statement
-            bool result = false;
-            if (1 == 1)
-            {
-                Console.WriteLine("Result was true");
-
-            }
-            else
-            {
-                Console.WriteLine("Result was false");
-            }
-
-
-            // if..else if
-            //int value = 2;
-            //if (value == 0)
+            //bool result = false;
+            //if (1 == 1)
             //{
-            //    Console.WriteLine("Value is 0");
-            //}
-            //else if (value == 1)
-            //{
-            //    Console.WriteLine("Value is not 0");
+            //    Console.WriteLine("Result was true");
+
             //}
             //else
             //{
-            //    Console.WriteLine("Value is something else");
+            //    Console.WriteLine("Result was false");
             //}
+
+
+            // if..else if
+            int value = 1;
+            if (value == 0)
+            {
+                Console.WriteLine("Value is 0");
+            }
+            else if (value == 1)
+            {
+                Console.WriteLine("Value is not 0");
+            }
+            else
+            {
+                Console.WriteLine("Value is something else");
+            }
 
 
             // switch statment
