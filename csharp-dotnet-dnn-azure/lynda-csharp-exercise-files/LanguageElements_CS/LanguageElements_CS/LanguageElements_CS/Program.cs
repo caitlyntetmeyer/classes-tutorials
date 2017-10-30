@@ -12,7 +12,7 @@ namespace LanguageElements_CS
         {
             //Concatenate("First ", "Last");
             //string word = Concatenate("First ", "Last");
-            Console.WriteLine(Concatenate("First ", "Last"));
+            //Console.WriteLine(Concatenate("First ", "Last"));
 
             #region Data Types
             //// numeric data types
@@ -50,19 +50,19 @@ namespace LanguageElements_CS
             #region Loops
 
             //for loop 
-            for (int counter = 0; counter < 10; counter++)
-            {
-                Console.WriteLine(counter);
-            }
+            //for (int counter = 0; counter < 10; counter++)
+            //{
+            //    Console.WriteLine(counter);
+            //}
 
 
             // foreach loop
 
-            int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
-            foreach (int item in arrInts)
-            {
-                Console.WriteLine(item);
-            }
+            //int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
+            //foreach (int item in arrInts)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
 
             // while loop 
@@ -86,16 +86,16 @@ namespace LanguageElements_CS
 
             #region Decision Structures
             // if statement
-            //bool result = false;
-            //if (1 == 1)
-            //{
-            //    Console.WriteLine("Result was true");
+            bool result = true;
+            if (result)
+            {
+                Console.WriteLine("Result was true");
 
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Result was false");
-            //}
+            }
+            else
+            {
+                Console.WriteLine("Result was false");
+            }
 
 
             // if..else if
