@@ -58,11 +58,11 @@ namespace LanguageElements_CS
 
             // foreach loop
 
-            //int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
-            //foreach (int item in arrInts)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            int[] arrInts = new int[] { 3, 5, 6, 23, 95, 45, 32 };
+            foreach (int item in arrInts)
+            {
+                Console.WriteLine(item);
+            }
 
 
             // while loop 
