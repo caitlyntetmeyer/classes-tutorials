@@ -86,8 +86,8 @@ namespace LanguageElements_CS
 
             #region Decision Structures
             // if statement
-            bool result = true;
-            if (result)
+            bool result = false;
+            if (1 == 1)
             {
                 Console.WriteLine("Result was true");
 
