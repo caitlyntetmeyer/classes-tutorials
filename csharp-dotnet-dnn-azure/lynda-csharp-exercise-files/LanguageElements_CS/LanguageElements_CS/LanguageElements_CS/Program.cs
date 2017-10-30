@@ -99,38 +99,38 @@ namespace LanguageElements_CS
 
 
             // if..else if
-            int value = 1;
-            if (value == 0)
-            {
-                Console.WriteLine("Value is 0");
-            }
-            else if (value == 1)
-            {
-                Console.WriteLine("Value is not 0");
-            }
-            else
-            {
-                Console.WriteLine("Value is something else");
-            }
-
-
-            // switch statment
             //int value = 1;
-
-            //switch (value)
+            //if (value == 0)
             //{
-            //    case 0:
-            //        Console.WriteLine("Value is 0");
-            //        break;
-
-            //    case 1:
-            //        Console.WriteLine("Value is 1");
-            //        break;
-
-            //    default:
-            //        Console.WriteLine("Value is something else");
-            //        break;
+            //    Console.WriteLine("Value is 0");
             //}
+            //else if (value == 1)
+            //{
+            //    Console.WriteLine("Value is not 0");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Value is something else");
+            //}
+
+
+            // switch statement
+            int value = 1;
+
+            switch (value)
+            {
+                case 0:
+                    Console.WriteLine("Value is 0");
+                    break;
+
+                case 1:
+                    Console.WriteLine("Value is 1");
+                    break;
+
+                default:
+                    Console.WriteLine("Value is something else");
+                    break;
+            }
             #endregion
         }
 
