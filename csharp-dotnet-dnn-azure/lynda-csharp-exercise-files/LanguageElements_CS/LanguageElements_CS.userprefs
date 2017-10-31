@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{5CB6C142-D745-4522-B8D8-517D906B8D40}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="LanguageElements_CS/Program.cs">
     <Files>
-      <File FileName="LanguageElements_CS/Program.cs" Line="1" Column="1" />
+      <File FileName="LanguageElements_CS/Program.cs" Line="155" Column="6" />
+      <File FileName="LanguageElements_CS/Properties/AssemblyInfo.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
