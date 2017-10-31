@@ -11,8 +11,6 @@ namespace LanguageElements_CS
         static void Main(string[] args)
         {
             //Concatenate("First ", "Last");
-            //string word = Concatenate("First ", "Last");
-            //Console.WriteLine(Concatenate("First ", "Last"));
 
             #region Data Types
             //// numeric data types
@@ -50,7 +48,7 @@ namespace LanguageElements_CS
             #region Loops
 
             //for loop 
-            //for (int counter = 0; counter < 10; counter++)
+            //for (int counter = 1; counter < 11; counter++)
             //{
             //    Console.WriteLine(counter);
             //}
@@ -115,26 +113,26 @@ namespace LanguageElements_CS
 
 
             // switch statement
-            int value = 1;
+            //int value = 1;
 
-            switch (value)
-            {
-                case 0:
-                    Console.WriteLine("Value is 0");
-                    break;
+            //switch (value)
+            //{
+            //    case 0:
+            //        Console.WriteLine("Value is 0");
+            //        break;
 
-                case 1:
-                    Console.WriteLine("Value is 1");
-                    break;
+            //    case 1:
+            //        Console.WriteLine("Value is 1");
+            //        break;
 
-                default:
-                    Console.WriteLine("Value is something else");
-                    break;
-            }
+            //    default:
+            //        Console.WriteLine("Value is something else");
+            //        break;
+            //}
             #endregion
         }
 
-        // Create a non-returning function here that concatenates two strings and just displays the result in screen
+        // Create a non-returning function here that concatenates two strings and displays the result to the screen
         //static void Concatenate(string first, string last)
         //{
         //    string whole = first + last;
@@ -142,13 +140,8 @@ namespace LanguageElements_CS
         //}
 
 
-
         // Create a returning function here that concatenates two strings and returns the result
-        static string Concatenate(string first, string last)
-        {
-            string whole = first + last;
-            return whole;
-        }
+
 
     }
 }
