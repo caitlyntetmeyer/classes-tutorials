@@ -11,6 +11,10 @@ namespace LanguageElements_CS
         static void Main(string[] args)
         {
             //Concatenate("First ", "Last");
+            //string word = Concatenate("First ", "Last");
+            //Console.WriteLine(Concatenate("First ", "Last"));
+
+            Sum(32, 45);
 
             #region Data Types
             //// numeric data types
@@ -140,8 +144,23 @@ namespace LanguageElements_CS
         //}
 
 
+
         // Create a returning function here that concatenates two strings and returns the result
+        //static string Concatenate(string first, string last)
+        //{
+        //    string whole = first + last;
+        //    return whole;
+        //}
 
 
+        static void Sum(int num1, int num2)
+        {
+
+            int sum = num1 + num2;
+
+            Console.WriteLine(sum);
+        }
     }
+
 }
+
