@@ -14,7 +14,29 @@ namespace Encapsulation
         private string height;
         private int age;
         private int numOfLegs;
-        
+
+        public int Age
+        {
+            get { return this.age; }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Age cannot be less than zero.");
+                }
+                else
+                {
+                    this.age = value;
+                }
+
+            }
+        }
+
+        public string Color
+        {
+            get { return this.color; }
+            set { this.color = value; }
+        }
 
         public void move()
         {

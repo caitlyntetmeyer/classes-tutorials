@@ -10,7 +10,10 @@ namespace Encapsulation
     {
         static void Main(string[] args)
         {
-            
+            Animal Dog = new Animal();
+            Dog.Age = 2;
+            Console.WriteLine(Dog.Age);
+
         }
     }
 }

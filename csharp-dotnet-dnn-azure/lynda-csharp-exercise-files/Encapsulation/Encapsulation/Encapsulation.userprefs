@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{A7A80328-DFE5-4EA3-ACE7-4B8EEC4649BD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Animal.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Animal.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Encapsulation PreferredExecutionTarget="MonoDevelop.Default" />
