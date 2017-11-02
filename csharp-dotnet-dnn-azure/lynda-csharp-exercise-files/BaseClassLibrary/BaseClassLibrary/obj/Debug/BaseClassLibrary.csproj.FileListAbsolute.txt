@@ -1,1 +1,2 @@
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\BaseClassLibrary\BaseClassLibrary\bin\Debug\BaseClassLibrary.exe.config
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/BaseClassLibrary/BaseClassLibrary/bin/Debug/BaseClassLibrary.exe.config
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/BaseClassLibrary/BaseClassLibrary/obj/Debug/BaseClassLibrary.csproj.CoreCompileInputs.cache
