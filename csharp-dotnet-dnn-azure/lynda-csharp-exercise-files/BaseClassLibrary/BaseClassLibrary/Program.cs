@@ -10,9 +10,14 @@ namespace BaseClassLibrary
     {
         static void Main(string[] args)
         {
-            Car newCar = new Car();
-            newCar.drive();
-            newCar.stop();
+            Car myCar = new Car(); // instantiates object
+
+            myCar.make = "Chevrolet";
+            myCar.model = "Camaro";
+            myCar.color = "Black";
+
+            myCar.Drive();
+            myCar.Stop();
         }
     }
 }

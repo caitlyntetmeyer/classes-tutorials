@@ -7,14 +7,16 @@ namespace BaseClassLibrary
 {
     class Car
     {
-        private string make;
-        private string mode;
-        private string color;
-        public void drive()
+        public string make;
+        public string model;
+        public string color;
+
+        public void Drive()
         {
             Console.WriteLine("Driving");
         }
-        public void stop()
+
+        public void Stop()
         {
             Console.WriteLine("Stopping");
         }

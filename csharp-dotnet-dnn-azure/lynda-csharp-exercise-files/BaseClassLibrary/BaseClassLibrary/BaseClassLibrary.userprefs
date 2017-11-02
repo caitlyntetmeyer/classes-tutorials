@@ -1,13 +1,6 @@
 ﻿<Properties StartupConfiguration="{AB55AFDC-45AE-40EA-8BA4-4BE58E9985DC}|Default">
   <MonoDevelop.Ide.ItemProperties.BaseClassLibrary PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Car.cs">
-    <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="../../Classes/Classes/Program.cs" Line="1" Column="1" />
-      <File FileName="../../Classes/Classes/Animal.cs" Line="1" Column="1" />
-      <File FileName="Car.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
