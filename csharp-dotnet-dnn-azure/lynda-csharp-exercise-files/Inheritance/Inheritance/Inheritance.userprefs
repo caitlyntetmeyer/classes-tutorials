@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{51A0928F-8358-4AB4-9643-69E8FE843E67}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Polymorphism/Polymorphism/Dog.cs">
     <Files>
-      <File FileName="Animal.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="14" Column="10" />
-      <File FileName="EmptyClass.cs" Line="4" Column="21" />
+      <File FileName="../../Polymorphism/Polymorphism/Dog.cs" Line="1" Column="1" />
+      <File FileName="../../Polymorphism/Polymorphism/Animal.cs" Line="1" Column="1" />
+      <File FileName="../../Polymorphism/Polymorphism/Program.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

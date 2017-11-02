@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Polymorphism
 {
-    class Dog : Animal
+    class Dog : Animal //Dog inherits from Animal
     {
-        
+        public string name;
+        public string owner;
+
+        public override void move()
+        {
+            Console.WriteLine("Running");
+        }
+
+
     }
 }

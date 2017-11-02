@@ -11,7 +11,9 @@ namespace Inheritance
         static void Main(string[] args)
         {
             Dog Spot = new Dog();
+            Spot.Age = 5;
             Spot.move();
+            Spot.makeNoise();
         }
     }
 }

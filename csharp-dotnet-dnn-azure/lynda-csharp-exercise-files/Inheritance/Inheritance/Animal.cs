@@ -20,7 +20,7 @@ namespace Inheritance
             get { return this.age; }
             set
             {
-                if(value <0)
+                if (value < 0)
                 {
                     Console.WriteLine("Age must be greater than 0");
                 }
@@ -37,14 +37,14 @@ namespace Inheritance
             set { this.color = value; }
         }
 
-        public void move()
+        public virtual void move()
         {
             Console.WriteLine("Moved");
         }
 
-        public void makeNoise()
+        public virtual void makeNoise()
         {
-
+            Console.WriteLine("Made noise");
         }
     }
 }
