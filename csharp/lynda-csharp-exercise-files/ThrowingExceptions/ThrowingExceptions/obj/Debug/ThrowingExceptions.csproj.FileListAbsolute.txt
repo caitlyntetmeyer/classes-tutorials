@@ -1,6 +1,13 @@
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\bin\Debug\ThrowingExceptions.exe.config
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\bin\Debug\ThrowingExceptions.exe
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\bin\Debug\ThrowingExceptions.pdb
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\obj\Debug\ThrowingExceptions.csprojResolveAssemblyReference.cache
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\obj\Debug\ThrowingExceptions.exe
-C:\Users\Gerry O'Brien\Desktop\Exercise Files\ThrowingExceptions\ThrowingExceptions\obj\Debug\ThrowingExceptions.pdb
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.exe.config
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.exe
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.pdb
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.csprojResolveAssemblyReference.cache
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.exe
+C:/Users/Gerry O'Brien/Desktop/Exercise Files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.exe.config
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Debug/ThrowingExceptions.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.csprojResolveAssemblyReference.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.csproj.CoreCompileInputs.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Debug/ThrowingExceptions.pdb
