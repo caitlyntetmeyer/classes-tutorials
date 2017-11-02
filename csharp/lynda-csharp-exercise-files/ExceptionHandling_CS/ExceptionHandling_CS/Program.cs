@@ -22,7 +22,7 @@ namespace ExceptionHandling_CS
             Console.WriteLine("Enter the denominator");
             denominator = Int32.Parse(Console.ReadLine());
 
-            try
+            try   //protected block of code - anything that executes in this block will be monitored by the .NET framework:
             {
                 result = numerator / denominator;
 
@@ -30,7 +30,7 @@ namespace ExceptionHandling_CS
                 Console.WriteLine("The result is: " + result);
             }
 
-            catch (OverflowException ofEx)
+            catch (OverflowException ofEx)    //catching specific info around the errors that are generated:
             {
                 errorMessage = ofEx.Message;
                 Console.WriteLine(errorMessage);
@@ -45,7 +45,10 @@ namespace ExceptionHandling_CS
                 errorMessage = e.Message;
                 Console.WriteLine(errorMessage);
             }
-            
+            finally
+            {
+                //clean-up code goes here
+            }
         }
     }
 }
