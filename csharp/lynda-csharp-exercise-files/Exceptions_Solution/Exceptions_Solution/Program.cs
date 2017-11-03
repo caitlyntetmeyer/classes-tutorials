@@ -14,7 +14,14 @@ namespace Exceptions_Solution
             object objValue = intValue;
             string strValue;
 
-            strValue = (string)objValue;
+            try
+            {
+                strValue = (string)objValue;
+            }
+            catch (InvalidCastException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

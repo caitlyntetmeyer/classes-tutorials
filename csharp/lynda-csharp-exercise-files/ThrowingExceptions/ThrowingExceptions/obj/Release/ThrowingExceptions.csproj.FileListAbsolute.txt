@@ -1,0 +1,6 @@
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Release/ThrowingExceptions.exe.config
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Release/ThrowingExceptions.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/bin/Release/ThrowingExceptions.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Release/ThrowingExceptions.csproj.CoreCompileInputs.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Release/ThrowingExceptions.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ThrowingExceptions/ThrowingExceptions/obj/Release/ThrowingExceptions.pdb
