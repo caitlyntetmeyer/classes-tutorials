@@ -57,7 +57,7 @@ namespace ThrowingExceptions
 
             catch (DivideByZeroException dEx)
             {
-                throw new Exception("Division by zero is not permitted, please change the denominator", dEx.InnerException);
+                throw new Exception("Division by zero is not permitted; please change the denominator.", dEx.InnerException);
             }
         }
     }
