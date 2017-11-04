@@ -19,16 +19,13 @@ Arrow Functions:
 
 https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211786?start=0
 
-Regular Syntax:
+Syntax of Arrow Functions: */
 
 const myFnc = () => {
-    ...
+    ...     // No more issues with the "this" keyword!
 }
 
-^^No more issues with the "this" keyword!
-
-Ex:
-*/
+// Ex:
 const printMyName = (name) => {
     console.log(name);
 }
@@ -40,13 +37,13 @@ const printMyName = name => {
 }
 printMyName('Max');     // "Max" 
 
-// An alternative regarding the function body, if you're only returning sth:
+// Here, all you're doing is returning sth:
 const multiply = (number) => {
     return number * 2;
 }
 console.log(multiply(2));       // 4
 
-// Additional shortening possibility, if exactly 1 argument AND only returning sth AND :
+// Additional shortening possibility, if exactly 1 argument AND you're only returning sth:
 const multiply = number => number * 2;  // no () around "number" AND no "return" keyword AND everything on one line
 console.log(multiply(2));   // 4
 
@@ -191,3 +188,56 @@ class Person extends Human {
 const person = new Person();
 person.printMyName(); // "Max"
 person.printGender(); // "male"
+
+/* 
+
+Spread and Rest Operators:
+
+https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211796?start=0
+
+The spread and rest operators are just three dots, like this: ...
+
+spread operators - used to split up:
+1) array elements, OR 
+2) object properties
+
+Let's say we want to pull in old elements to a new array, and also add more elements to the new array: */
+const newArray = [...oldArray, 1, 2]    // Literally three dots are used to pull in the old elements.
+
+// Let's say we want to make a new object that pulls in all the properties of an old object and also adds a new property:
+const newObject = {...oldObject, newProp: 5}    // pulls in the old object and then adds a new property, newProp
+
+// rest operators - used to merge a list of _function arguments_ into an _array_:
+function sortArgs(...args) {    // The rest operator pulls in function arguments and puts them into an array.
+    return args.sort()
+}
+
+// Spread Operator with Array Elements:
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4];     // "...numbers" pulls in the elements of the numbers array. Then we add a new number, 4.
+
+console.log(newNumbers);    // [1, 2, 3, 4]
+
+// Spread Operator with Objects:
+const person = {
+    name: 'Max'     // assigns a name to the "person" object
+  };
+  
+  const newPerson = {
+    ...person,  // pulls in the name of the old person
+    age: 28     // adds an age to the new person
+  }
+  
+  console.log(newPerson);   /* Result:
+  [object Object] {
+    age: 28,
+    name: "Max"
+  }
+  */
+
+  // Rest Operator (used less often):
+  const filter = (...args) => {
+    return args.filter(element => element === 1);
+  }
+  
+  console.log(filter(1, 2, 3));     // [1]
