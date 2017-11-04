@@ -146,4 +146,48 @@ class Human {   // the super constructor
 
   // Classes are one of two ways in React to create components.
 
-  
+  /*
+
+  Classes, Properties, and Methods:
+
+  https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211792?start=0
+
+  Properties are like variables attached to classes and objects.
+  Methods are like functions attached to classes and objects.
+---
+  Properties -
+  In ES6, this is the syntax for assigning properties: */
+  constructor() {
+      this.myProperty = 'value'
+  }
+
+  // ...but in ES7, you can assign properties directly within a class, like this:
+  myProperty = 'value'  // No constructor call needed!
+/* ---
+Methods -
+In ES6, this is the syntax for methods: */
+myMethod() {...}
+
+// ... but in ES7, you can do this for methods:
+myMethod = () => {...} // By using an arrow function as a property value, you have no problems w/a "this" keyword!
+
+// So let's improve the Human example from above:
+class Human {  
+    gender = 'male';
+        printGender = () => {
+          console.log(this.gender);
+        }
+      }
+      
+class Person extends Human {
+    name = 'Max';
+    gender = 'male';
+
+    printMyName = () => {
+        console.log(this.name);
+    }
+}
+
+const person = new Person();
+person.printMyName(); // "Max"
+person.printGender(); // "male"
