@@ -81,6 +81,69 @@ import {clean as Clean} from './utility.js'
 // Still alternatively, you could use an asterisk with "as bundled":
 import * as bundled from './utility.js'
 
+/*
 
+Understanding Classes:
 
+https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211788?start=0
 
+Classes are blueprints for objects!
+
+Classes are declared using the "class" keyword.
+
+Like this: */
+class Person {
+    name = 'Max'    // property (a variable attached to a class)
+    call = () => {...}  // method (a function attached to a class)
+}
+
+// Usage of classes:
+const myPerson = new Person() // Instantiate a class with the "new" keyword.
+myPerson.call()
+console.log(myPerson.name)
+
+// Classes support _inheritance_ with the "extends" keyword:
+class Person extends Master
+
+// Class Example:
+class Person {
+    constructor() {
+        this.name = 'Max';
+    }
+
+    printMyName() {
+        console.log(this.name);
+    }
+}
+
+const person = new Person();
+person.printMyName; // "Max"
+
+// Classes can also inherit, as in this example:
+class Human {   // the super constructor
+    constructor() {
+      this.gender = 'male';
+    }
+    
+    printGender() {
+      console.log(this.gender);
+    }
+  }
+  
+  class Person extends Human {  // Person will now inherit from Human.
+    constructor() {
+      super(); // MUST HAVE this super() method, so that the parent constructor "Human" will get executed.
+      this.name = 'Max';
+    }
+    printMyName() {
+      console.log(this.name);
+    }
+  }
+  
+  const person = new Person();
+  person.printMyName(); // "Max"
+  person.printGender(); // "male"
+
+  // Classes are one of two ways in React to create components.
+
+  
