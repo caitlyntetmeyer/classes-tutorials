@@ -241,3 +241,42 @@ const person = {
   }
   
   console.log(filter(1, 2, 3));     // [1]
+
+  /*
+
+  Destructuring:
+
+  https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211798?start=0
+
+  Destructuring lets you easily extract array elements or object properties and store them in variables.
+  Lets you pull out single elements/properties and store them in variables.
+
+  Array Destructuring: */
+  [a, b] = ['Hello', 'Max']
+  console.log(a)    // Hello
+  console.log(b)    // Max
+
+  // Object Destructuring:
+  {name} = {name: 'Max', age: 28}   // pulls out the name only, not the age
+  console.log(name)     // Max
+  console.log(age)      // undefined
+
+  // Array Destructuring Example:
+  const numbers = [1, 2, 3];
+  [num1, num2] = numbers;
+  console.log(num1, num2); 
+  /* 
+  1
+  2 
+  */
+
+  // If you want to bring out the 3 instead, and not the 2:
+  const numbers = [1, 2, 3];
+  [num1, , num3] = numbers;     // Notice the empty space where num2 would have gone.
+  console.log(num1, num3);
+  /*
+  1
+  3
+  */
+
+  
