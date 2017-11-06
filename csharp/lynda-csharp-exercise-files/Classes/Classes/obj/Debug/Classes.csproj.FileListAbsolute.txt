@@ -1,7 +1,0 @@
-c:/users/gerry o'brien/documents/visual studio 2013/Projects/Classes/Classes/bin/Debug/Classes.exe.config
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/bin/Debug/Classes.exe.config
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/bin/Debug/Classes.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/bin/Debug/Classes.pdb
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/obj/Debug/Classes.csproj.CoreCompileInputs.cache
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/obj/Debug/Classes.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/lynda-csharp-exercise-files/Classes/Classes/obj/Debug/Classes.pdb

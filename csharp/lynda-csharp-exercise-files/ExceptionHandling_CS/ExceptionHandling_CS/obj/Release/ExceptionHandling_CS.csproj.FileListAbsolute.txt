@@ -1,6 +1,0 @@
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/bin/Release/ExceptionHandling_CS.exe.config
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/bin/Release/ExceptionHandling_CS.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/bin/Release/ExceptionHandling_CS.pdb
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/obj/Release/ExceptionHandling_CS.csproj.CoreCompileInputs.cache
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/obj/Release/ExceptionHandling_CS.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/ExceptionHandling_CS/ExceptionHandling_CS/obj/Release/ExceptionHandling_CS.pdb

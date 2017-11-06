@@ -1,13 +1,18 @@
 ﻿using System;
 
-namespace HelloWorld
+namespace SimpleMethod
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
+        {
+            HelloWorld();
+            Console.ReadLine();
+        }
+
+        private static void HelloWorld()
         {
             Console.WriteLine("Hello World!");
-            Console.ReadLine();
         }
     }
 }
