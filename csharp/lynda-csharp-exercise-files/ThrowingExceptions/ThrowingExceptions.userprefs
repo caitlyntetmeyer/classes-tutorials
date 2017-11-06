@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{4FB8BA66-6A86-4AFF-B1EB-9B4214698424}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="../Exceptions_Solution/Exceptions_Solution/Program.cs">
     <Files>
-      <File FileName="../Exceptions_Solution/Exceptions_Solution/Program.cs" Line="28" Column="1" />
+      <File FileName="../Exceptions_Solution/Exceptions_Solution/Program.cs" Line="24" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
