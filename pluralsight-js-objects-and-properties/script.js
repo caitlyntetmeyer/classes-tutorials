@@ -74,24 +74,41 @@
 
 // ---
 
+// function Cat(name, color) {
+//   this.name = name;
+//   this.color = color;
+// }
+// Cat.prototype.age = 4;
+
+// var fluffy = new Cat("Fluffy", "White");  // 4
+// var muffin = new Cat("Muffin", "Brown");  // 4
+
+// display(fluffy.age);
+// display(fluffy.__proto__.age);
+
+// display(Object.keys(fluffy)); 
+// // Array { 
+// //    0: name
+// //    1: color 
+// // }
+
+// ---
+
 function Cat(name, color) {
   this.name = name;
   this.color = color;
 }
 Cat.prototype.age = 4;
 
-var fluffy = new Cat("Fluffy", "White");  // 4
-var muffin = new Cat("Muffin", "Brown");  // 4
+var fluffy = new Cat("Fluffy", "White"); // 5
+var muffin = new Cat("Muffin", "Brown"); // 4
+
+fluffy.age = 5;
 
 display(fluffy.age);
 display(fluffy.__proto__.age);
 
-display(Object.keys(fluffy)); 
-// Array { 
-//    0: name
-//    1: color 
-// }
-
+display(fluffy.hasOwnProperty('age')); // true
 
 
 
