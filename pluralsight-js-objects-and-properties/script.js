@@ -54,31 +54,43 @@
 
 // ---
 
+// function Cat(name, color) {
+//   this.name = name
+//   this.color = color
+// }
+// var fluffy = new Cat("Fluffy", "White")
+
+// Cat.prototype.age = 3
+
+// display(Cat.prototype)
+// // Cat { age: 3 }
+// display(fluffy.__proto__)
+// // Cat { age: 3 }
+
+// var muffin = new Cat("Muffin", "Brown")
+
+// display(muffin.__proto__)
+// // Cat { age: 3 }
+
+// ---
+
 function Cat(name, color) {
-  this.name = name
-  this.color = color
+  this.name = name;
+  this.color = color;
 }
-var fluffy = new Cat("Fluffy", "White")
+Cat.prototype.age = 4;
 
-Cat.prototype.age = 3
+var fluffy = new Cat("Fluffy", "White");  // 4
+var muffin = new Cat("Muffin", "Brown");  // 4
 
-display(Cat.prototype)
-/* Cat {
-  age: 3
-} */
-display(fluffy.__proto__)
-/* Cat {
-  age: 3
-} */
+display(fluffy.age);
+display(fluffy.__proto__.age);
 
-var muffin = new Cat("Muffin", "Brown")
-
-display(muffin.__proto__)
-/* Cat {
-  age: 3
-} */
-
-
+display(Object.keys(fluffy)); 
+// Array { 
+//    0: name
+//    1: color 
+// }
 
 
 
