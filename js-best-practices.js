@@ -12,6 +12,6 @@ Why take this course?
 	You can't believe everything you read online.
 	Take knowledge with you.
 
-
+Write code in a maintainable way!
 
 */
