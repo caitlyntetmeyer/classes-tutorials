@@ -28,4 +28,6 @@ Cadence - the particular rhythm or timebox that sprints follow
 Query - set of clauses that helps find work items that a user may want to
 review, triage, update, or list in a report
 
+Story point - arbitrary measure defined by the team that communicates the difficulty level and scope of a story.
+
 */
