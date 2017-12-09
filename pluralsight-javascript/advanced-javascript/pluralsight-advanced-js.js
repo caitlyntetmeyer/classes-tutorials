@@ -357,9 +357,7 @@ function foo(bar) {
 
 foo("bar");
 
-// See ex1 for the next exercise.
-
-// The "this" Keyword:
+// ---
 
 
 
