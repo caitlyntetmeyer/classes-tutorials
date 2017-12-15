@@ -11,3 +11,7 @@ C:/Users/bob/Documents/Visual Studio 2015/Projects/HelperMethods/HelperMethods/o
 /Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/downloads%2Fcs-code/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.csproj.CoreCompileInputs.cache
 /Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/downloads%2Fcs-code/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.exe
 /Users/Caitly/Desktop/projects/classes-tutorials/csharp/lynda-csharp-exercise-files/downloads%2Fcs-code/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.pdb
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/bob-tabor-csharp/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.csprojResolveAssemblyReference.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/bob-tabor-csharp/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.csproj.CoreCompileInputs.cache
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/bob-tabor-csharp/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.exe
+/Users/Caitly/Desktop/projects/classes-tutorials/csharp/bob-tabor-csharp/Lesson_10/Before/HelperMethods/HelperMethods/obj/Debug/HelperMethods.pdb
