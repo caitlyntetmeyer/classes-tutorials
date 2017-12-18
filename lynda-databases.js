@@ -13,7 +13,33 @@ They solve the problems of data storage (names, descriptions, amounts, files):
 3. Accuracy (ex: Nothing prevents typos in an Excel spreadsheet)
 4. Security (ex: Anyone could edit an Excel sheet)
 5. Redundancy (ex: The data itself shouldn't have multiple entries, esp. if they conflict)
-6. Importance of your data (ex: )
+6. Importance of your data
+
+Db's give us STRUCTURE.
+
+---
+
+These are database MANAGEMENT SYSTEMS (DBMS), not db's: Oracle, MySQL, SQL Server, DB@, PostgreSQL, SQLite, MS Access.
+	You use DBMS's to create one or more databases.
+	The databases are yours, and they follow your rules.
+	Db's are generally represented as cylinders.
+
+RDBMS - relational database management systems
+
+NoSQL DBMS - MongoDB, CouchDB, Cassandra
+
+---
+
+Relational Db Mgmt Systems:
+
+The most widely used
+Use the same principles across all offerings
+Are foundational for understanding other systems
+
+---
+
+RDMS Features:
+
 
 
 */
