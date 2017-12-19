@@ -47,6 +47,11 @@ By defining columns, we're imposing rules on the data they store.
 The DBMS won't let us break these rules.
 
 Primary keys must be unique.
+System-generated primary keys may be called synthetic keys or surrogate keys.
+Most important key in a table.
+
+---
+
 
 
 
