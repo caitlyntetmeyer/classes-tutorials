@@ -40,6 +40,45 @@ Are foundational for understanding other systems
 
 RDMS Features:
 
+A db has tables w/rows and columns.
+Example of column names: LastName (text), HireDate (date), Grade (numeric), Salary (currency).
+
+By defining columns, we're imposing rules on the data they store.
+The DBMS won't let us break these rules.
+
+Primary keys must be unique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 */
