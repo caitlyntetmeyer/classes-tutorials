@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <input type="text" [(ngModel)]="name">
     <p>Hello {{ name }}!</p>
-    <p>I'm the user component.</p>
+    <p>I'm the user component</p>
     `
 })
 export class UserComponent {
