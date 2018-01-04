@@ -1,0 +1,112 @@
+<script>
+    $(document).ready(function () {
+        // Inside Text
+        $("#googlemapsInsideText").gMap({
+            controls: {
+                panControl: true,
+                zoomControl: false,
+                mapTypeControl: true,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+            },
+            markers: [{
+                address: "12175 Visionary Way, Suite 750 Fishers, IN 46038 ",
+                html: "<strong>Fishers Office</strong><br>Fishers, IN 46038",
+                icon: {
+                    image: "/portals/2/img/pin.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46]
+                },
+                popup: true
+            }],
+            scrollwheel: false,
+            latitude: 39.966789,
+            longitude: 86.008474,
+            zoom: 9
+        });
+    });
+</script>
+
+//
+
+<script>
+    $(document).ready(function () {
+        // Inside Text
+        $("#googlemapsInsideText").gMap({
+            controls: {
+                panControl: true,
+                zoomControl: false,
+                mapTypeControl: true,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+            },
+            markers: [{
+                address: "12175 Visionary Way, Suite 750 Fishers, IN 46038",
+                html: "<strong>Launch Fishers</strong><br>Fishers",
+                icon: {
+                    image: "/portals/2/img/pin.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46]
+                },
+                {
+            
+                popup: true
+            }],
+            scrollwheel: false,
+            latitude: 39.966789,
+            longitude: 86.008474,
+            zoom: 9
+        });
+    });
+</script>
+
+//
+
+<script>
+    $(document).ready(function () {
+        // Markers
+        $("#googlemapsMarkers").gMap({
+            controls: {
+                draggable: (($.browser.mobile) ? false : true),
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true
+            },
+            scrollwheel: false,
+            markers: [{
+                address: "217 Summit Boulevard, Birmingham, AL 35243",
+                html: "<strong>Alabama Office</strong><br>217 Summit Boulevard, Birmingham, AL 35243",
+                icon: {
+                    image: "/portals/2/img/pin.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46]
+                }
+            }, {
+                address: "645 E. Shaw Avenue, Fresno, CA 93710",
+                html: "<strong>California Office</strong><br>645 E. Shaw Avenue, Fresno, CA 93710",
+                icon: {
+                    image: "/portals/2/img/pin.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46]
+                }
+            }, {
+                address: "New York, NY 10017",
+                html: "<strong>New York Office</strong><br>New York, NY 10017",
+                icon: {
+                    image: "/portals/2/img/pin.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46]
+                }
+            }],
+            latitude: 37.09024,
+            longitude: -95.71289,
+            zoom: 3
+        });
+    });
+</script>
+
