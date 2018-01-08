@@ -279,4 +279,36 @@ const person = {
   3
   */
 
+//
+
+const person = {
+  name: 'Max'
+};
+
+const secondPerson = person;
+
+console.log(secondPerson);
+/* 
+[object Object] {
+  name: "Max"
+} 
+*/
+
+//
+
+const person = {
+  name: 'Max'
+};
+
+const secondPerson = person;
+
+person.name = 'Manu';
+
+console.log(secondPerson);
+/*
+[object Object] {
+  name: "Manu"
+}
+*/
+
   
