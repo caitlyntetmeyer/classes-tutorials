@@ -279,13 +279,15 @@ const person = {
   3
   */
 
-//
+// https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211800?start=0: 
+
+// Example 1:
 
 const person = {
   name: 'Max'
 };
 
-const secondPerson = person;
+const secondPerson = person; // "copies" Max
 
 console.log(secondPerson);
 /* 
@@ -294,7 +296,7 @@ console.log(secondPerson);
 } 
 */
 
-//
+// Example 2:
 
 const person = {
   name: 'Max'
@@ -302,7 +304,7 @@ const person = {
 
 const secondPerson = person;
 
-person.name = 'Manu';
+person.name = 'Manu'; // "erases" Max
 
 console.log(secondPerson);
 /*
@@ -311,4 +313,26 @@ console.log(secondPerson);
 }
 */
 
-  
+// Example 3 (best way?):
+
+const person = {
+  name: 'Max'
+};
+
+const secondPerson = {
+  ...person
+}; // creates a "real" copy of the properties, and not the entire object
+
+person.name = 'Manu';
+console.log(secondPerson);
+/*
+[object Object] {
+  name: "Max"
+}
+*/
+
+// Refreshing Array Functions - https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211802?start=0:
+
+const numbers = [1, 2, 3];
+
+
