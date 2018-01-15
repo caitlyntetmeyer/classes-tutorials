@@ -79,7 +79,7 @@ Learn once, write everywhere (NOT write once, run everywhere).
 		There are bugs because it's still under active development
 		...but we have tools to overcome these challenges!
 
----
+------
 
 I took a detour: https://facebook.github.io/react-native/docs/tutorial.html
 
@@ -106,6 +106,8 @@ When you're building a React Native app, you'll be making new components a lot.
 Anything you see on the screen is some sort of component. 
 A component can be pretty simple - the only thing that's required is a render function which returns some JSX to render.
 
+--
+
 props - parameters for customizing components when they're created
 
 Ex: One basic React Native component is the Image.
@@ -127,6 +129,16 @@ When you create an image, you can use a prop named "source" to control WHAT imag
 	}
 
 You can put any JavaScript expression inside braces in JSX.
+
+--
+
+State
+https://facebook.github.io/react-native/docs/state.html
+
+
+
+
+------
 
 */
 
