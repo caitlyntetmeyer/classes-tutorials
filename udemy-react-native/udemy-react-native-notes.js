@@ -20,7 +20,7 @@ Behind the Scenes:
 					<View>
 						<Text>Hello there!</Text>
 					</View>
-					);
+				);
 			}
 		}
 		---
@@ -32,13 +32,30 @@ Behind the Scenes:
 Ways of Wrapping Content:
 
 1. React for the Web
-	<div> (sth only the browser understands)
+	a. <div> (sth only the browser understands)
+	b. <input>
 2. Native Component (Android)
-	android.view (base component that Android understands)
+	a. android.view (base component that Android understands)
+	b. EditText
 3. Native Component (iOS)
-	UIView
+	a. UIView
+	b. UITextField
 4. React Native
-	<View>
+	a. <View>
+	b. <TextInput>
+	(The above two lines would be compiled into the corresponding options in #2 and #3)
+
+---
+
+What about the JavaScript Part / Our Logic?
+The UI is compiled to components exposed by React Native.
+The logic is written by us in JS - it becomes a JS thread hosted by React Native app (similar to NodeJS, where the code runs w/o a browser). **Our logic remains JavaScript.
+
+---
+
+Creating Our First React Native App
+https://www.udemy.com/react-native-the-practical-guide/learn/v4/t/lecture/8567784?start=0
+
 
 
 */
