@@ -5,6 +5,8 @@
 
 // let people = ["Leanne Graham", "Ervin Howell", "Clementine Bauch", "Patricia Lebsack", "Chelsey Dietrich"] // given
 
+// ---
+
 // My attempt:
 // function filter(filterString) {
 
