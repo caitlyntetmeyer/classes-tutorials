@@ -13,7 +13,7 @@ It's a JS + React Native app, compiled to native code
 Behind the Scenes:
 
 	React + React Native App:
-		---
+		--- */
 		class App extends Component {
 			render() {
 				return (
@@ -23,7 +23,7 @@ Behind the Scenes:
 				);
 			}
 		}
-		---
+		/* ---
 
 	Compiled to --> Real Native App
 
@@ -83,7 +83,7 @@ Learn once, write everywhere (NOT write once, run everywhere).
 
 I took a detour: https://facebook.github.io/react-native/docs/tutorial.html
 
-Hello World React Native App:
+Hello World React Native App: */
 	import React, { Component } from 'react';
 	import { AppRegistry, Text } from 'react-native';
 
@@ -94,7 +94,7 @@ Hello World React Native App:
 	    );
 	  }
 	}
-
+/*
 These are some ES2015 (AKA ES6) features:
 	import
 	from
@@ -108,10 +108,9 @@ A component can be pretty simple - the only thing that's required is a render fu
 
 --
 
-props - parameters for customizing components when they're created
+props - parameters for customizing components when they're created. Set by the parent. Fixed throughout the lifetime of a component.
 
-Ex: One basic React Native component is the Image.
-When you create an image, you can use a prop named "source" to control WHAT image it shows.
+Ex: One basic React Native component is the Image. When you create an image, you can use a ** prop ** named "source" to control WHAT image it shows. */
 
 	import React, { Component } from 'react';
 	import { AppRegistry, Image } from 'react-native';
@@ -126,23 +125,74 @@ When you create an image, you can use a prop named "source" to control WHAT imag
 	      <Image source={pic} style={{width: 193, height: 110}}/>
 	    );
 	  }
-	}
+	} /*
 
-You can put any JavaScript expression inside braces in JSX.
+BTW you can put any JavaScript expression inside braces in JSX.
 
 --
 
 State
 https://facebook.github.io/react-native/docs/state.html
 
+2 Types of Data That Control a Component:
+1. props
+2. state
 
+For data that'll change, we must use ** state **.
 
+In general, initialize "state" in the constructor; then, call "setState" when you wanna change it.
+
+Ex: Make text that blinks on and off all the time:
+	*/
+	import React, { Component } from 'react';
+	import { AppRegistry, Text, View } from 'react-native';
+
+	// Create the Blink component:
+	class Blink extends Component {
+	  constructor(props) {
+	    super(props);
+	    // Here's "state" - it starts out showing the text:
+	    this.state = {isShowingText: true};
+
+	    // Toggle the state every second:
+	    setInterval(() => {
+	    	// Here's "setState":
+	      this.setState(previousState => {
+	        return { isShowingText: !previousState.isShowingText };
+	      });
+	    }, 1000);
+	  }
+
+	  render() {
+	  	// If this.state.isShowing Text is true, then show text. Otherwise, show nothing:
+	    let display = this.state.isShowingText ? this.props.text : ' ';
+	    return (
+	      <Text>{display}</Text>
+	    );
+	  }
+	}
+
+	export default class BlinkApp extends Component {
+	  render() {
+	    return (
+	      <View>
+	      	{/* Here's the Blink class from above? */}
+	        <Blink text='I love to blink' />
+	        <Blink text='Yes blinking is so great' />
+	        <Blink text='Why did they ever take this out of HTML' />
+	        <Blink text='Look at me look at me look at me' />
+	      </View>
+	    );
+	  }
+	}
+
+/*
 
 ------
 
+
+
 */
-
-
 
 
 
