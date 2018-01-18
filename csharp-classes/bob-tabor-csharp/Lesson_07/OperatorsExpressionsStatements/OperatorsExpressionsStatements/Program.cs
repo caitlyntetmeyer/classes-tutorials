@@ -85,8 +85,8 @@ namespace OperatorsExpressionsStatements
             // Member access and Method invocation
             Console.WriteLine("Hi");
 
-            x + y;
-
+            x + y; // Not a valid expression!
+            
         }
     }
 }
