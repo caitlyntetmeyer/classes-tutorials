@@ -21,7 +21,10 @@ namespace ForIteration
             }
 
 
-
+            for (int myValue = 0; myValue < 12; myValue++)
+            {
+                Console.WriteLine(myValue);
+            }
 
 
 

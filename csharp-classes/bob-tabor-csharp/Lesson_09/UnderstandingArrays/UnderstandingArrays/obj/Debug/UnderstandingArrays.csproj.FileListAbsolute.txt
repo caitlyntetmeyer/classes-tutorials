@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe.config
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.pdb
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.exe
+\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_09\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.pdb
