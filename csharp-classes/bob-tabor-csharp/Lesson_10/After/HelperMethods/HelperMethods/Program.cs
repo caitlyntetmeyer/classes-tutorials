@@ -23,11 +23,16 @@ namespace HelperMethods
 
             Console.Write("Results: ");
 
-            DisplayResult(ReverseString(firstName), 
-                ReverseString(lastName), 
-                ReverseString(city))
+            DisplayResult(ReverseString(firstName),
+                ReverseString(lastName),
+                ReverseString(city));
             
             Console.ReadLine();
+        }
+
+        private static void DisplayResult(string v)
+        {
+            throw new NotImplementedException();
         }
 
         private static string ReverseString(string message)
