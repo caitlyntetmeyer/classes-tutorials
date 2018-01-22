@@ -71,7 +71,15 @@ namespace WorkingWithStrings
             // ---
 
             // String Builder:
+            StringBuilder myString = new StringBuilder();
 
+            for (int i = 0; i < 100; i++)
+            { // More efficient than above example:
+                // Append two dashes:
+                myString.Append("--");
+                // Append i:
+                myString.Append(i);
+            } // Same result as above example.
 
             Console.WriteLine(myString);
             Console.ReadLine();
