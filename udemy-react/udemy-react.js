@@ -12,8 +12,17 @@ https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/821
 
 "let" is the new "var". It's for variable values. 
 Use "const" if you plan on creating a _constant_ value.
+*/
 
----
+let myName = 'Max';
+console.log(myName); // "Max"
+
+myName = 'Manu';
+console.log(myName); // "Manu"
+
+// The above doesn't work with "const" because "const" can't be changed!
+
+// ---
 
 Arrow Functions:
 
