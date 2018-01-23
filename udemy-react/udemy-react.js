@@ -20,18 +20,23 @@ console.log(myName); // "Max"
 myName = 'Manu';
 console.log(myName); // "Manu"
 
-// The above doesn't work with "const" because "const" can't be changed!
+/* The above doesn't work with "const" because "const" can't be changed!
 
-// ---
+---
 
 Arrow Functions:
 
 https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211786?start=0
 
-Syntax of Arrow Functions: */
+Regular Function Syntax: */
+function myFnc() {
+  console.log("foo");
+}
+
+// Arrow Function Syntax:
 
 const myFnc = () => {
-    ...     // No more issues with the "this" keyword!
+    console.log("foo");     // No more issues with the "this" keyword!
 }
 
 // Ex:
@@ -45,6 +50,8 @@ const printMyName = name => {
     console.log(name);
 }
 printMyName('Max');     // "Max" 
+
+// If no arguments, do empty parentheses: const foo = () => {...}
 
 // Here, all you're doing is returning sth:
 const multiply = (number) => {
@@ -64,7 +71,7 @@ Exports & Imports (Modules):
 
 https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8211788?start=0
 
-Ex. 1 - In 1st file, person.js:
+In 1st file, person.js:
 */
 const person = {
     name: 'Max'
@@ -72,19 +79,23 @@ const person = {
 // "default" keyword means, "If you export something from this file, it should be this thing":
 export default person
 
-// Ex. 1 - In 2nd file, utility.js:
-export const baseData = 10;
+// In 2nd file, utility.js:
 export const clean = () => {...}
 
-// Ex. 1 - in 3rd file, app.js:
+export const baseData = 10;
+
+// In 3rd file, app.js - import from person.js:
 import person from './person.js' // or "import prs from './person.js'" - it's up to you what you name the default
 
-// Still in 3rd file - _named_ exports (you must use the exact name, between curly braces):
+// Import NAMED exports from utility.js (you must use the EXACT name between curly braces):
 import {baseData} from './utility.js'
+
 import {clean} from './utility.js'  
+
 // Alternatively, you could create an _alias_ using the "as" keyword:
 import {clean as Clean} from './utility.js'
-// Still alternatively, you could use an asterisk with "as bundled":
+
+// Still alternatively, you could use an asterisk to mean all of 'em together, with "as" and an alias such as "bundled":
 import * as bundled from './utility.js'
 
 /*
@@ -111,6 +122,8 @@ console.log(myPerson.name)
 // Classes support _inheritance_ with the "extends" keyword:
 class Person extends Master
 
+
+
 // Class Example:
 class Person {
     constructor() {
@@ -123,28 +136,29 @@ class Person {
 }
 
 const person = new Person();
-person.printMyName; // "Max"
+person.printMyName(); // "Max"
+
+
 
 // Classes can also inherit, as in this example:
 class Human {   // the super constructor
-    constructor() {
-      this.gender = 'male';
-    }
-    
-    printGender() {
-      console.log(this.gender);
-    }
+  constructor() {
+    this.gender = 'male';
+  } 
+  printGender() {
+    console.log(this.gender);
   }
+}
   
-  class Person extends Human {  // Person will now inherit from Human.
-    constructor() {
-      super(); // MUST HAVE this super() method, so that the parent constructor "Human" will get executed.
-      this.name = 'Max';
-    }
-    printMyName() {
-      console.log(this.name);
-    }
+class Person extends Human {  // Person will now inherit from Human.
+  constructor() {
+    super(); // MUST HAVE this super() method, so that the parent constructor "Human" will get executed.
+    this.name = 'Max';
   }
+  printMyName() {
+    console.log(this.name);
+  }
+}
   
   const person = new Person();
   person.printMyName(); // "Max"

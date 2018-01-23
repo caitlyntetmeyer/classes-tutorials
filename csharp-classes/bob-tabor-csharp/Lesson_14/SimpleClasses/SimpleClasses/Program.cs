@@ -10,13 +10,22 @@ namespace SimpleClasses
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car();
+            Car myCar = new Car(); // creates a new class (which is like a pattern / cookie cutter / recipe)
+            myCar.Make = "Oldsmobile";
+            myCar.Model = "Cutlas Supreme";
+            myCar.Year = 1986;
+            myCar.Color = "Silver";
+
+            Console.WriteLine("{0} {1} {2} {3}", 
+                myCar.Make, 
+                myCar.Model, 
+                myCar.Year, 
+                myCar.Color);
+            // We used myCar instead of Car because Car is just the blueprint. We want myCar, the variable name.
+
+            Console.ReadLine();
         }
     }
-
-
-
-
 
     class Car
     {
@@ -28,6 +37,5 @@ namespace SimpleClasses
     }
 
 
-    // left off at 10:42 in video
 
 }
