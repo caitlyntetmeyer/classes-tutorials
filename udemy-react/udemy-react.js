@@ -37,17 +37,17 @@ function myFnc() {
 
 const myFnc = () => {
     console.log("foo");     // No more issues with the "this" keyword!
-}
+  }
 
 // Ex:
 const printMyName = (name) => {
-    console.log(name);
+  console.log(name);
 }
 printMyName('Max');     // "Max" 
 
 // If exactly 1 argument, can omit () around "name" argument (1st line):
 const printMyName = name => {
-    console.log(name);
+  console.log(name);
 }
 printMyName('Max');     // "Max" 
 
@@ -55,7 +55,7 @@ printMyName('Max');     // "Max"
 
 // Here, all you're doing is returning sth:
 const multiply = (number) => {
-    return number * 2;
+  return number * 2;
 }
 console.log(multiply(2));       // 4
 
@@ -74,7 +74,7 @@ https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/821
 In 1st file, person.js:
 */
 const person = {
-    name: 'Max'
+  name: 'Max'
 }
 // "default" keyword means, "If you export something from this file, it should be this thing":
 export default person
@@ -112,7 +112,7 @@ Like this: */
 class Person {
     name = 'Max'    // property (a variable attached to a class)
     call = () => {...}  // method (a function attached to a class)
-}
+  }
 
 // Usage of classes:
 const myPerson = new Person() // Instantiate a class with the "new" keyword.
@@ -126,13 +126,13 @@ class Person extends Master
 
 // Class Example:
 class Person {
-    constructor() {
-        this.name = 'Max';
-    }
+  constructor() {
+    this.name = 'Max';
+  }
 
-    printMyName() {
-        console.log(this.name);
-    }
+  printMyName() {
+    console.log(this.name);
+  }
 }
 
 const person = new Person();
@@ -149,7 +149,7 @@ class Human {   // the super constructor
     console.log(this.gender);
   }
 }
-  
+
 class Person extends Human {  // Person will now inherit from Human.
   constructor() {
     super(); // MUST HAVE this super() method, so that the parent constructor "Human" will get executed.
@@ -159,10 +159,10 @@ class Person extends Human {  // Person will now inherit from Human.
     console.log(this.name);
   }
 }
-  
-  const person = new Person();
-  person.printMyName(); // "Max"
-  person.printGender(); // "male"
+
+const person = new Person();
+person.printMyName(); // "Max"
+person.printGender(); // "male"
 
   // Classes are one of two ways in React to create components.
 
@@ -178,7 +178,7 @@ class Person extends Human {  // Person will now inherit from Human.
   Properties -
   In ES6, this is the syntax for assigning properties: */
   constructor() {
-      this.myProperty = 'value'
+    this.myProperty = 'value'
   }
 
   // ...but in ES7, you can assign properties directly within a class, like this:
@@ -193,19 +193,19 @@ myMethod = () => {...} // By using an arrow function as a property value, you ha
 
 // So let's improve the Human example from above:
 class Human {  
-    gender = 'male';
-        printGender = () => {
-          console.log(this.gender);
-        }
-      }
-      
-class Person extends Human {
-    name = 'Max';
-    gender = 'male';
+  gender = 'male';
+  printGender = () => {
+    console.log(this.gender);
+  }
+}
 
-    printMyName = () => {
-        console.log(this.name);
-    }
+class Person extends Human {
+  name = 'Max';
+  gender = 'male';
+
+  printMyName = () => {
+    console.log(this.name);
+  }
 }
 
 const person = new Person();
@@ -232,7 +232,7 @@ const newObject = {...oldObject, newProp: 5}    // pulls in the old object and t
 
 // rest operators - used to merge a list of _function arguments_ into an _array_:
 function sortArgs(...args) {    // The rest operator pulls in function arguments and puts them into an array.
-    return args.sort()
+  return args.sort()
 }
 
 // Spread Operator with Array Elements:
