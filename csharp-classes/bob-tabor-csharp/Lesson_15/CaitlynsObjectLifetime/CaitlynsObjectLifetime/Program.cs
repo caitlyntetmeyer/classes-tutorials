@@ -20,10 +20,10 @@ namespace CaitlynsObjectLifetime
 
             // Create a handle but fail to attach it to a bucket in our computer's memory:
             Car myOtherCar;
-            // Create the second handle and copy the first handle's address to it:
+            // Create the second handle and copy the first bucket's address to it:
             myOtherCar = myCar;
 
-            Console.WriteLine("{0} {1} {2} {3}", 
+            Console.WriteLine("{0} {1} - {2} - {3}", 
                 myOtherCar.Make, 
                 myOtherCar.Model, 
                 myOtherCar.Year, 
@@ -32,15 +32,11 @@ namespace CaitlynsObjectLifetime
             // Change myOtherCar's Model to be the 98 model (the model, not the year):
             myOtherCar.Model = "98";
 
-            Console.WriteLine("{0} {1} {2} {3}",
-                myOtherCar.Make,
-                myOtherCar.Model,
-                myOtherCar.Year,
-                myOtherCar.Color); // Returns "Oldsmobile 98 1986 Silver", reflecting the change we made to the Model
-
-
-
-
+            Console.WriteLine("{0} {1} - {2} - {3}",
+                myCar.Make,
+                myCar.Model,
+                myCar.Year,
+                myCar.Color); // Returns "Oldsmobile 98 1986 Silver", reflecting the change we made to the Model
 
             Console.ReadLine();
 
