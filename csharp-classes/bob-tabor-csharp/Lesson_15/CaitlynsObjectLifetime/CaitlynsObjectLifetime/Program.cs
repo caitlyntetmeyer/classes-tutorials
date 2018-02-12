@@ -13,16 +13,19 @@ namespace CaitlynsObjectLifetime
             // Create new instance myCar of the class Car:
             Car myCar = new Car();
 
+            Car.MyMethod();
+
             /*
             myCar.Make = "Oldsmobile";
             myCar.Model = "Cutlas Supreme";
             myCar.Year = 1986;
             myCar.Color = "Silver";
-            */
+            
 
             // Create a new instance of the Car class and initialize the overloaded constructor below:
             Car myThirdCar = new Car("Ford", "Escape", 2005, "white");
-
+    
+            
             // Create a handle but fail to attach it to a bucket in our computer's memory:
             Car myOtherCar;
             // Create the second handle and copy the first bucket's address to it:
@@ -33,7 +36,7 @@ namespace CaitlynsObjectLifetime
                 myOtherCar.Model, 
                 myOtherCar.Year, 
                 myOtherCar.Color); // Returns "Oldsmobile Cutlas Supreme 1986 Silver" - the same as myCar because of line 24
-
+            
             // Change myOtherCar's Model to be the 98 model (the model, not the year):
             myOtherCar.Model = "98";
 
@@ -52,10 +55,11 @@ namespace CaitlynsObjectLifetime
                 myOtherCar.Model,
                 myOtherCar.Year,
                 myOtherCar.Color); // Returns an unhandled null reference exception because we removed the handle
-            */
+            
             
             // Have the .NET runtime remove the handle to the bucket (which at some point removes the object from memory):
             myCar = null;
+            */
 
             Console.ReadLine();
         }
@@ -69,6 +73,7 @@ namespace CaitlynsObjectLifetime
         public int Year { get; set; }
         public string Color { get; set; }
         
+        /*
         public Car()
         {
             // You could load the value from a configuration file, a database, etc. to get the object into a valid state when it's instantiated:
@@ -83,6 +88,13 @@ namespace CaitlynsObjectLifetime
             Year = year;
             Color = color;
         }
-        
+        */
+
+        public static void MyMethod()
+        {
+            Console.WriteLine("Called the static MyMethod");
+            Console.WriteLine(Make);
+        }
+
     }
 }
