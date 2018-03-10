@@ -1,0 +1,21 @@
+h1 {
+	color: #49745E;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 7px;
+	text-align: center;
+}
+
+img {
+	width: 90px;
+}
+
+a {
+	color: #6CA0B4;
+}
+
+a:hover {
+	color: #49745E;
+}
