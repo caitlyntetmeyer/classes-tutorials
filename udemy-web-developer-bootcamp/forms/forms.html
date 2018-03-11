@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The <form> tag</title>
+	<title>Form Demo</title>
 </head>
 
 <body>
-	
 
+	<!-- This won't actually work yet because we need a backend first. -->
+
+	<div>
+		<h1>Login</h1>
+
+		<!-- action - where the form sends data to -->
+		<!-- method - what HTTP method (get/post) -->
+
+		<form action="/sign-in-url" method="post">
+			<input type="text" placeholder="username">
+			<input type="password" placeholder="password">
+			<input type="submit"> <!-- looks like a button -->
+		</form>
+	</div>
+	
+	<!-- Google "mdn input" for all the types you can specify. -->
+
+	<h1>Common Form Inputs</h1>
 	<form action="/my-form-submitting-page" method="post">
-		<!-- All our inputs will go in here -->
+		<div>
+			<p>Text Input:</p>
+			<input type="text" placeholder="Enter text here">
+		</div>
+
+		<div>
+			<p>Date Input:</p>
+			<input type="date">
+		</div>
+
+		<div>
+			<p>Color Input:</p>
+			<input type="color">
+		</div>
+
+		<div>
+			<p>File Input:</p>
+			<input type="file">
+		</div>
+
+		<div>
+			<p>Checkbox Input:</p>
+			<input type="checkbox">
+		</div>
+
+		<div>
+			<p>Radio Input:</p>
+			<input type="radio">
+		</div>
 	</form>
 
 </body>
