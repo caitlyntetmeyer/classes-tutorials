@@ -6,6 +6,8 @@
 
 <body>
 
+	<!-- https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861228?start=0 -->
+
 	<!-- This won't actually work yet because we need a backend first. -->
 
 	<div>
@@ -14,12 +16,34 @@
 		<!-- action - where the form sends data to -->
 		<!-- method - what HTTP method (get/post) -->
 
-		<form action="/sign-in-url" method="post">
-			<input type="text" placeholder="username">
-			<input type="password" placeholder="password">
+		<form action="/my-form-submitting-page" method="post">
+			<label>
+				Username:
+				<input name="username" type="text" placeholder="username">
+			</label>
+
+			<label>
+				Password:
+				<input name="password" type="password" placeholder="password">
+			</label>
+
 			<input type="submit"> <!-- looks like a button -->
 		</form>
 	</div>
+
+	<!-- Alternate syntax, using "for" and "id" attributes paired up: -->
+
+	<h2>Alternate Syntax</h2>
+
+	<form action="/my-form-submitting-page" method="post">
+		<label for="username">Username:</label>
+		<input id="username" type="text" placeholder="username">
+		
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="password">
+		
+		<input type="submit"> <!-- looks like a button -->
+	</form>
 	
 	<!-- Google "mdn input" for all the types you can specify. -->
 

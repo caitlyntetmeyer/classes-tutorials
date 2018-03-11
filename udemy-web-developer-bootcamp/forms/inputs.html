@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inputs Demo</title>
+	</head>
+	<body>
+
+		<!-- radio button -->
+		<!-- select tag -->
+		<!-- textarea tag -->
+
+		<h1>Inputs</h1>
+
+		<p>Do you prefer cats or dogs?</p>
+
+		<!-- "name" connects the inputs so the user can only select one -->
+		<form action="/fake-redirect-url" method="post">
+			<label for="dogs">Dogs:</label>
+			<input name="petChoice" id="dogs" type="radio">
+
+			<label for="cats">Cats:</label>
+			<input name="petChoice" id="cats" type="radio">
+
+			<button>Go!</button> <!-- If a button's the last thing in a form, the button will submit the form. -->
+		</form>
+
+	</body>
+</html>
