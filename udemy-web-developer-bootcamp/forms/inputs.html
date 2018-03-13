@@ -14,12 +14,28 @@
 		<p>Do you prefer cats or dogs?</p>
 
 		<!-- "name" connects the inputs so the user can only select one -->
-		<form action="/fake-redirect-url" method="post">
+		<form>
 			<label for="dogs">Dogs:</label>
-			<input name="petChoice" id="dogs" type="radio">
+			<input name="petChoice" id="dogs" type="radio" value="DOGS">
 
 			<label for="cats">Cats:</label>
-			<input name="petChoice" id="cats" type="radio">
+			<input name="petChoice" id="cats" type="radio" value="CATS">
+
+			<p>What's your favorite color?</p>
+			<select name="color" id="faveColor">
+				<option value="RED">Red</option>
+				<option value="BLUE">Blue</option>
+				<option value="YELLOW">Yellow</option>
+			</select>
+
+			<p>What's your current mood?</p>
+			<select name="mood" id="currMood">
+				<option value="HAPPY">:)</option>
+				<option value="NEUTRAL">:|</option>
+				<option value="SAD">:(</option>
+			</select>
+
+			<textarea name="paragraph" id="" cols="50" rows="10"></textarea>
 
 			<button>Go!</button> <!-- If a button's the last thing in a form, the button will submit the form. -->
 		</form>
