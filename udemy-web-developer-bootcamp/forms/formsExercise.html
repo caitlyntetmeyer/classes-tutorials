@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms Exercise</title>
+	</head>
+	<body>
+		<h1>Register</h1>
+
+		<form action="/fake-redirect-url" method="post">
+			<label for="firstName">First Name:</label>
+			<input name="name" id="firstName" type="text" placeholder="John" required>
+
+			<label for="lastName">Last Name:</label>
+			<input name="name" id="lastName" type="text" placeholder="Smith" required>
+			
+			<section>
+				<label for="male">Male</label>
+				<input name="gender" id="male" type="radio">
+
+				<label for="female">Female</label>
+				<input name="gender" id="female" type="radio">
+
+				<label for="other">Other</label>
+				<input name="gender" id="other" type="radio">
+			</section>
+
+			<section>
+				<label for="emailAddress">Email:</label>
+				<input name="login" id="emailAddress" type="email" placeholder="your email" required>
+
+				<label for="password">Password:</label>
+				<input name="login" id="password" type="password" required>
+			</section>
+
+			<section>
+				<label for="birthday">Birthday:</label>
+				<select name="birthday" id="month">
+					<option value="month">Month</option>
+					<option value="jan">Jan</option>
+					<option value="feb">Feb</option>
+					<option value="mar">Mar</option>
+				</select>
+				<select name="birthday" id="day">
+					<option value="day">Day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<select name="birthday" id="year">
+					<option value="year">Year</option>
+					<option value="1986">1986</option>
+					<option value="1987">1987</option>
+					<option value="1988">1988</option>
+				</select>
+			</section>
+
+			<section>
+				<label for="checkbox">I agree to the terms and conditions</label>
+				<input type="checkbox">
+			</section>
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
