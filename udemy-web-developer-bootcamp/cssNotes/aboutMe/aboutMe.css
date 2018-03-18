@@ -1,11 +1,23 @@
-body {
-	background-color: snow;
+h1 {
+	color: #000000;
 }
 
-h1, h4 {
-	color: darkblue;
+h2 {
+	color: #4B0082;
 }
 
-li {
-	color: deeppink;
+h3 {
+	color: #FF1493;
 }
+
+/* 
+
+HEXADECIMAL - Base 16: 0-9 and A-F (F is the highest)
+
+The "#" is called an octothorpe. 
+
+First two letters - how much red
+Second two letters - how much green
+Third two letters - how much blue 
+
+*/
