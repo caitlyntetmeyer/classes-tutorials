@@ -1,13 +1,5 @@
 h1 {
-	color: #000000;
-}
-
-h2 {
-	color: #4B0082;
-}
-
-h3 {
-	color: #FF1493;
+	color: rgba(200, 100, 220, .6);
 }
 
 /* 
@@ -19,5 +11,20 @@ The "#" is called an octothorpe.
 First two letters - how much red
 Second two letters - how much green
 Third two letters - how much blue 
+
+*/
+
+/*
+
+RGB - in base 10
+3 channels: red, green and blue. Each ranges from 0-255.
+
+*/
+
+/*
+
+RGBA - same as RGB, but with alpha (transparency) channel.
+
+Ranges from 0.0-1.0.
 
 */
