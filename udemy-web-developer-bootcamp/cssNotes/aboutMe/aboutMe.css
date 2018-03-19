@@ -1,5 +1,22 @@
 h1 {
-	color: rgba(200, 100, 220, .6);
+	color: rgba(0, 200, 100, .8);
+	border: 2px solid rgb(255, 100, 80);
+	/* border-color: purple;
+	border-width: 5px;
+	border-style: solid; */
+}
+
+/* Borders have width, color and style. */
+
+h4 {
+	background-color: rgb(255, 100, 80);
+}
+
+body {
+	background: pink;
+	/*background: url(http://clipground.com/images/wood-grain-clipart-12.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
 }
 
 /* 
@@ -12,16 +29,10 @@ First two letters - how much red
 Second two letters - how much green
 Third two letters - how much blue 
 
-*/
-
-/*
 
 RGB - in base 10
 3 channels: red, green and blue. Each ranges from 0-255.
 
-*/
-
-/*
 
 RGBA - same as RGB, but with alpha (transparency) channel.
 
