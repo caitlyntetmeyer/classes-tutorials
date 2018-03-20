@@ -1,0 +1,95 @@
+/* Element */
+
+li {
+
+}
+
+/* Class */
+
+.hello {
+
+}
+
+/* Id */
+
+#name {
+
+}
+
+/* Star */
+
+* {
+	border: 1px solid lightgrey;
+}
+
+/* Descendant Selector */
+
+li a {
+	color: red;
+}
+
+li .hello { 
+	color: blue;
+}
+
+/* Adjacent Selector */
+
+	/* ul's after an h4 (at the same level - siblings, not children): */
+h4 + ul {
+	border: 4px solid red;
+}
+
+/* Attribute Selector */
+
+	/* Every "a" tag that has this href: */
+
+a[href="http://www.google.com"] {
+
+}
+
+	/* Every input tag that's of type text: */
+
+input[type="text"] {
+
+}
+
+	/* Every input tag that's of type checkbox: */
+input[type="checkbox"] {
+
+}
+
+/* nth of Type */
+
+	/* The 3rd unordered list: */
+
+ul:nth-of-type(3) {
+
+}
+
+	/* The 3rd li in every group: */
+
+ul:nth-of-type(3) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
