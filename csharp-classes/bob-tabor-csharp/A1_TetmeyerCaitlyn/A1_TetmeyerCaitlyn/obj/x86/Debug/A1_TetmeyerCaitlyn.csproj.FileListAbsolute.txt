@@ -1,5 +1,0 @@
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/A1_TetmeyerCaitlyn/A1_TetmeyerCaitlyn/bin/Debug/A1_TetmeyerCaitlyn.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/A1_TetmeyerCaitlyn/A1_TetmeyerCaitlyn/bin/Debug/A1_TetmeyerCaitlyn.pdb
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/A1_TetmeyerCaitlyn/A1_TetmeyerCaitlyn/obj/x86/Debug/A1_TetmeyerCaitlyn.csproj.CoreCompileInputs.cache
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/A1_TetmeyerCaitlyn/A1_TetmeyerCaitlyn/obj/x86/Debug/A1_TetmeyerCaitlyn.exe
-/Users/Caitly/Desktop/projects/classes-tutorials/csharp-dotnet-dnn-azure/A1_TetmeyerCaitlyn/A1_TetmeyerCaitlyn/obj/x86/Debug/A1_TetmeyerCaitlyn.pdb

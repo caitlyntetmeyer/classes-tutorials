@@ -1,7 +1,0 @@
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\bin\Debug\ForIteration.exe.config
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\bin\Debug\ForIteration.exe
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\bin\Debug\ForIteration.pdb
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\obj\Debug\ForIteration.csproj.CoreCompileInputs.cache
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\obj\Debug\ForIteration.exe
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\obj\Debug\ForIteration.pdb
-\\vmware-host\Shared Folders\Desktop\projects\classes-tutorials\csharp-classes\bob-tabor-csharp\Lesson_08\ForIteration\ForIteration\obj\Debug\ForIteration.csprojResolveAssemblyReference.cache
