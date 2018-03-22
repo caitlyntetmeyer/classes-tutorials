@@ -1,0 +1,33 @@
+/* Type selectors are least specific */
+li {
+
+}
+
+li a {
+
+}
+
+li + a {
+
+}
+
+/* Class, attribute, and pseudo-class selectors are more specific
+ */
+.hello {
+
+}
+
+input[type="text"] {
+
+}
+
+a:hover {
+
+}
+
+input:checked {
+
+}
+
+ /* ID selectors are MOST specific */
+#hello
