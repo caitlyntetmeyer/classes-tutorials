@@ -1,0 +1,29 @@
+/*
+
+The CSS Box Model: Each element has -
+
+-Content
+-Padding (the space inside the border)
+-Border
+-Margin (the space outside the border)
+
+*/
+
+p {
+	/*Content - Width and Height*/
+
+	width: 50%; /* 50% of the parent element, which in this case is the body */
+
+	/*Border*/
+
+	border: 2px solid blue;
+
+	/*Padding*/
+
+	padding-left: 40px;
+
+	/*Margin*/
+
+	/*margin: 0 auto 0 auto;*/
+	margin: 50px auto;
+}
