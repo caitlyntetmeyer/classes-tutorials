@@ -81,7 +81,11 @@ var fiat = {
 	started: false,
 	fuel: 0,
 	start: function() {
-		this.started = true;
+		if (this.fuel == 0) {
+			alert("The car is on empty; fill up before starting!");
+		} else {
+			this.started = true;
+		}
 	},
 	stop: function() {
 		this.started = false;
