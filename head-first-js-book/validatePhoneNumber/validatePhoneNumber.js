@@ -72,7 +72,19 @@ function validate(phoneNumber) {
 	return true;
 }
 
+// Use the split method. (This is my attempt.)
 
+var phoneNumber = "123-4567";
+var vals = phoneNumber.split("-");
+
+if ( vals.length == 6) {
+	for (var i = 0; i < vals.length; i++) {
+		if (isNaN(i)) {
+			return false;
+		}
+		return true;
+	}
+}
 
 
 
