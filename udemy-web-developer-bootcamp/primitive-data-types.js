@@ -27,6 +27,11 @@
 	"hello"[0] // "h"
 	"hello"[4] // "o"
 
+	// Exercises
+	100 % 3 // 1
+	("blah" + "blah")[6] // "a"
+	"hello".length % "hi\\".length // 2
+
 // Booleans
 true
 false
