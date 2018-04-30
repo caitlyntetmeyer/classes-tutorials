@@ -1,0 +1,1 @@
+// Variables are containers that store values.
