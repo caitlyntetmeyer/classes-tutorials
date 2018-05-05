@@ -33,39 +33,13 @@ view.displayMessage("Tap, tap, is this thing on?");
 
 // Model:
 
-var ships = [ 
-	{ locations: ["06", "16", "26"], hits: ["hit", "hit", "hit"] },
-	{ locations: ["24", "34", "44"], hits: ["hit", "hit", "hit"] },
-	{ locations: ["10", "11", "12"], hits: ["hit", "hit", "hit"] }
-];
+var model = {
+	boardSize: 7,
+	numShips: 3,
+	shipLength: 3,
+	shipsSunk: 0,
 
-// A6 - 06 - hit
-// B3 - 13 - miss
-// C4 - 24 - hit
-// D1 - 31 - miss
-// B0 - 10 - hit
-// D4 - 34 - hit
-// F0 - 50 - miss
-// A1 - 01 - miss
-// C6 - 26 - hit
-// B1 - 11 - hit
-// B2 - 12 - hit
-// E4 - 44 - hit
-// B6 - 16 - hit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	ships: [ { locations: ["06", "16", "26"], hits: ["", "", ""] },
+			 { locations: ["24", "34", "44"], hits: ["", "", ""] },
+			 { locations: ["10", "11", "12"], hits: ["", "", ""] } ]
+};
