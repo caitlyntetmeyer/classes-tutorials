@@ -111,8 +111,18 @@ model.fire("11");
 model.fire("10");
 
 
+// The controller will get and process the player's guess, keep track of the number of guesses, ask the model to update itself based on the latest guess, and detect when the game is over (when all ships have been sunk).
+
 // Controller:
 
+var controller = {
+	guesses: 0,
+
+	// guess will have a form like "A0":
+	processGuess: function(guess) {
+		// code will go here
+	}
+}
 
 
 
