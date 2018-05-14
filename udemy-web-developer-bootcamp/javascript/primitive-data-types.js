@@ -36,6 +36,10 @@
 true
 false
 
-// null and undefined
-null
-undefined
+// undefined (declared but not initialized)
+var name;
+var age;
+
+// null (explicitly nothing)
+var currentPlayer = 'charlie';
+currentPlayer = null; // game over
