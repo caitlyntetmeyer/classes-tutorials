@@ -1,4 +1,5 @@
 // Methods
+
 clear();
 
 // alert
