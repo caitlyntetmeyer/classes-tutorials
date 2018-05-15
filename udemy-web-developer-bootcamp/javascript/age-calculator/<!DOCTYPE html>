@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JS Stalker Exercise</title>
-
+    <title>Age Calculator</title>
 </head>
 <body>
-	<h1>JS Stalker Exercise</h1>
 
     <script src="script.js"></script>
 </body>
