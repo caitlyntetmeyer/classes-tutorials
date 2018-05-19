@@ -81,6 +81,21 @@ var model = {
 		return false;
 	},
 
+		// This method iterates, creating ships, until it has filled the model's ships array with enough ships
+		generateShipLocations: function() {
+		var locations;
+		// For each ship we want to generate locations for
+		for (var i = 0; i < this.numShips; i++) {
+			do {
+				// We generate a new set of locations...
+				locations = this.generateShip();
+				// ...and check to see if those locations overlap with any existing ships on the board. If they do, then we need to try again. So keep generating new locations until there's no collision
+			} while (this.collision(locations));
+			// Once we have locations that work, we assign the locations to the ship's locations property in the model.ships array
+			this.ships[i].locations = locations;
+		}
+	},
+
 	// Take a ship and return true if it's sunk and false if it's still floating:
 	isSunk: function(ship) {
 		for (var i = 0; i < this.shipLength; i++) {
@@ -193,6 +208,7 @@ function handleFireButton() {
 
 function handleKeyPress(e) {
 	var fireButton = document.getElementById("fireButton");
+	// The Enter key has a keyCode of 13
 	if (e.keyCode === 13) {
 		fireButton.click();
 		return false;
@@ -200,6 +216,8 @@ function handleKeyPress(e) {
 }
 
 window.onload = init;
+
+
 
 
 
