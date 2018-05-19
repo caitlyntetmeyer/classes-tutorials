@@ -104,10 +104,14 @@ var model = {
 		// If the direction is 1, we'll create a horizontal ship
 		if (direction === 1) {
 			// Generate a starting location for a horizontal ship
+			row = Math.floor(Math.random() * this.boardSize);
+			col = Math.floor(Math.random() * (this.boardSize - (this.shipLength + 1)));
 
 			// If the direction is 0, we'll create a vertical ship
 		} else {
 			// Generate a starting location for a vertical ship
+			row = Math.floor(Math.random() * (this.boardSize - (this.shipLength + 1)));
+			col = Math.floor(Math.random() * this.boardSize);
 		}
 
 		// For the new ship locations, we'll start with an empty array, and add the locations one by one
@@ -116,8 +120,10 @@ var model = {
 		for (var i = 0; i < this.shipLength; i++) {
 			if (direction === 1) {
 				// add new location to newShipLocations array for new horizontal ship each time through the loop
+				newShipLocations.push(row + "" + (col + i));
 			} else {
 				// add new location to newShipLocations array for new vertical ship each time through the loop
+				newShipLocations.push((row + i) + "" + col);
 			}
 		}
 		// Once we've generated all the locations, we return the array
