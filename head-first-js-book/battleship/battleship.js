@@ -96,6 +96,34 @@ var model = {
 		}
 	},
 
+	generateShip: function() {
+		// Use Math.random to generate a number between 0 and 1, and multiply the result by 2, to get a number between 0 and 2 (not including 2). Then turn that into a 0 or a 1 using Math.floor
+		var direction = Math.floor(Math.random() * 2);
+		var row;
+		var col;
+		// If the direction is 1, we'll create a horizontal ship
+		if (direction === 1) {
+			// Generate a starting location for a horizontal ship
+
+			// If the direction is 0, we'll create a vertical ship
+		} else {
+			// Generate a starting location for a vertical ship
+		}
+
+		// For the new ship locations, we'll start with an empty array, and add the locations one by one
+		var newShipLocations = [];
+		// Loop for the number of locations in a ship
+		for (var i = 0; i < this.shipLength; i++) {
+			if (direction === 1) {
+				// add new location to newShipLocations array for new horizontal ship each time through the loop
+			} else {
+				// add new location to newShipLocations array for new vertical ship each time through the loop
+			}
+		}
+		// Once we've generated all the locations, we return the array
+		return newShipLocations;
+	},
+
 	// Take a ship and return true if it's sunk and false if it's still floating:
 	isSunk: function(ship) {
 		for (var i = 0; i < this.shipLength; i++) {
