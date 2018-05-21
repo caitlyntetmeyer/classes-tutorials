@@ -142,6 +142,7 @@ var model = {
 		return true;
 	},
 
+	// locations is an array of locations for a new ship we'd like to place on the board
 	collision: function(locations) {
 		for (var i = 0; i < this.numShips; i++) {
 			var ship = model.ships[i];
