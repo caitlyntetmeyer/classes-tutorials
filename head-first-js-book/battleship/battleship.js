@@ -8,13 +8,13 @@ var view = {
 		// Update the text of the messageArea element by setting its innerHTML to msg:
 		messageArea.innerHTML = msg;
 	},
-		displayHit: function(location) {
-		// If the user guesses a location where there is a battleship, display battleship image
+	displayHit: function(location) {
+	// If the user guesses a location where there is a battleship, display battleship image
 
-		// Get the element by its id, which matches the location:
-		var cell = document.getElementById(location);
-		// Set the class attribute of the element to hit:
-		cell.setAttribute("class", "hit");
+	// Get the element by its id, which matches the location:
+	var cell = document.getElementById(location);
+	// Set the class attribute of the element to hit:
+	cell.setAttribute("class", "hit");
 	},
 	displayMiss: function(location) {
 		// If the user guesses a location where there's no battleship, display MISS image
@@ -22,15 +22,6 @@ var view = {
 		cell.setAttribute("class", "miss");
 	}
 };
-
-// view.displayMiss("00");
-// view.displayHit("34");
-// view.displayMiss("55");
-// view.displayHit("12");
-// view.displayMiss("25");
-// view.displayHit("26");
-// view.displayMessage("Tap, tap, is this thing on?");
-
 
 // Model:
 
@@ -40,9 +31,9 @@ var model = {
 	shipLength: 3,
 	shipsSunk: 0,
 
-	ships: [ { locations: ["06", "16", "26"], hits: ["", "", ""] },
-			 { locations: ["24", "34", "44"], hits: ["", "", ""] },
-			 { locations: ["10", "11", "12"], hits: ["", "", ""] } ],
+	ships: [ { locations: [0, 0, 0], hits: ["", "", ""] },
+			 { locations: [0, 0, 0], hits: ["", "", ""] },
+			 { locations: [0, 0, 0], hits: ["", "", ""] } ],
 
 	// The fire method is what turns a player's guess into a hit or a miss. It takes a guess as an argument:
 	fire: function(guess) {
@@ -144,34 +135,21 @@ var model = {
 
 	// locations is an array of locations for a new ship we'd like to place on the board
 	collision: function(locations) {
+		// For each ship already on the board...
 		for (var i = 0; i < this.numShips; i++) {
 			var ship = model.ships[i];
+			// ...check to see if any of the locations in the new ship's locations array are in an existing ship's locations array
 			for (var j = 0; j < locations.length; j++) {
+				// If the location already exists in a ship, we found a collision
 				if (ship.locations.indexOf(locations[j]) >= 0) {
 					return true;
 				}
 			}
 		}
+		// If no collision
 		return false;
 	}
 };
-
-
-// Test:
-// model.fire("53");
-
-// model.fire("06");
-// model.fire("16");
-// model.fire("26");
-
-// model.fire("34");
-// model.fire("24");
-// model.fire("44");
-
-// model.fire("12");
-// model.fire("11");
-// model.fire("10");
-
 
 // The controller will get and process the player's guess, keep track of the number of guesses, ask the model to update itself based on the latest guess, and detect when the game is over (when all ships have been sunk).
 
@@ -218,23 +196,6 @@ function parseGuess(guess) {
 
 }
 
-// console.log(parseGuess("A0"));
-// console.log(parseGuess("B6"));
-// console.log(parseGuess("G3"));
-// console.log(parseGuess("H0"));
-// console.log(parseGuess("A7"));
-
-// controller.processGuess("A0");
-// controller.processGuess("A6");
-// controller.processGuess("B6");
-// controller.processGuess("C6");
-// controller.processGuess("C4");
-// controller.processGuess("D4");
-// controller.processGuess("E4");
-// controller.processGuess("B0");
-// controller.processGuess("B1");
-// controller.processGuess("B2");
-
 function init() {
 	// click handler
 	var fireButton = document.getElementById("fireButton");
@@ -242,6 +203,9 @@ function init() {
 	// key press handler
 	var guessInput = document.getElementById("guessInput");
 	guessInput.onkeypress = handleKeyPress;
+
+	// Generate the ship's locations right when user loads the game, before she starts playing. This will fill in those empty arrays in the model
+	model.generateShipLocations();
 }
 
 function handleFireButton() {
