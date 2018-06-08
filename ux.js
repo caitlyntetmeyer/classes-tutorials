@@ -38,4 +38,19 @@ Lesson 2 - A Typical UX Design Process
 
 	Visual Design and Development
 
+
+Lesson 4 - Skills
+
+	Soft Skills:
+
+	-Communication
+	-Empathy
+	-Organization
+
+	Hard Skills:
+	
+	-User Research
+	-Information Architecture
+	-Wireframing and Prototyping
+
 */
