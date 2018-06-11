@@ -64,4 +64,11 @@ Lesson 5 - UX Design Jobs and the Quadrant Model
 
 	-Information Architecture (IA) - organization of product content and information to optimize the user’s experience - information architect, data analyst, content strategist
 
+
+Lesson 6 - The Importance of a Portfolio
+
+	UX design portfolio - an online exhibition of a UX designer's work
+
+	UX is concerned with the overall design process more than with the visual elements. This is where case studies help showcase an entire UX process from discovery to solution.
+
 */
