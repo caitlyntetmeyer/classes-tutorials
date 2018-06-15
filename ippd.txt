@@ -1,0 +1,24 @@
+Me: IPPD Web Dev Coordinator
+	I can put down deliverables for it - non-profit volunteer gig
+I want Leah Treffman (has experience with divi), Karly Hicke (Networking Specialist), Aris (Graphic Designer, does CSS and stuff). Kelly Holloway for data entry.
+
+CONTENT TYPES - sth in Wordpress, Drupal, SharePoint, etc.
+A content type is a thing made of characteristics
+Characteristics are the metadata, thus the columns
+
+Current state: rotting in Google Site
+Goal: Be in Wordpress
+
+Log in at www.nonmainstream.labordaylibertine.org/blog/wp-admin 
+Dig through this to see how Views is used: www.labordaylibertine.org/libertine/
+It's basically all just widgets (mini-apps that do your work for you)
+
+divi theme - Leah (Chris Collins' gf) owns the license
+He bought a license for WP Forms
+
+TODO:
+Make "Booth Applications" text darker
+Forms for ppl who lead workshops, rituals; performers - get info to appropriate coordinator
+
+Learn the menu
+Always hit Cancel
