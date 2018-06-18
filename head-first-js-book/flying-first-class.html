@@ -37,6 +37,23 @@
 			console.log("The plane can't take off; not everyone has paid.");
 		}
 		
+		// ---
+		
+		function printPassenger(passenger) {
+			if (passenger.paid) {
+				console.log(passenger.name + " has paid.");
+			} else {
+				console.log(passenger.name + " hasn't paid.");
+			}
+		}
+		processPassengers(passengers, printPassenger);
+		/*
+		Jane Doloop has paid.
+		Dr. Evel has paid.
+		Sue Property hasn't paid.
+		John Funcall has paid.
+		*/
+
     </script>
 </head>
 <body>
