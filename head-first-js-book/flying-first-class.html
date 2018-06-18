@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flying First Class</title>
     <script>
+    	
     	var passengers = [ { name: "Jane Doloop", paid: true },
 						   { name: "Dr. Evel", paid: true },
 						   { name: "Sue Property", paid: false },
 						   { name: "John Funcall", paid: true } ];
-
+		
 		function processPassengers(passengers, testFunction) {
 			for (var i = 0; i < passengers.length; i++) {
 				if (testFunction(passengers[i])) {
@@ -38,7 +39,7 @@
 		}
 		
 		// ---
-		
+
 		function printPassenger(passenger) {
 			if (passenger.paid) {
 				console.log(passenger.name + " has paid.");
@@ -53,6 +54,32 @@
 		Sue Property hasn't paid.
 		John Funcall has paid.
 		*/
+
+		// ---
+
+		var passengers = [ { name: "Jane Doloop", paid: true, ticket: "coach" },
+						   { name: "Dr. Evel", paid: true, ticket: "firstclass" },
+						   { name: "Sue Property", paid: false, ticket: "firstclass" },
+						   { name: "John Funcall", paid: true, ticket: "coach" } ];
+
+
+		function createDrinkOrder(passenger) {
+			if (passenger.ticket === "firstclass") {
+				alert("Would you like a cocktail or wine?");
+			} else {
+				alert("Your choice is cola or water.");
+			}
+		}
+
+		function serveCustomer(passenger) {
+			createDrinkOrder(passenger);
+			// get dinner order
+			createDrinkOrder(passenger);
+			createDrinkOrder(passenger);
+			// show movie
+			createDrinkOrder(passenger);
+			// pick up trash
+		}
 
     </script>
 </head>
