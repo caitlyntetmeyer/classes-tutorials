@@ -22,5 +22,7 @@ What you need to know...
 -JavaScript
 -Install Node.js (for npm)
 
+To start MongoDB, type mongod in the console.
+
 
 */
