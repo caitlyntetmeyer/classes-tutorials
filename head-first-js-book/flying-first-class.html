@@ -64,22 +64,38 @@
 
 
 		function createDrinkOrder(passenger) {
+			var orderFunction;
+
 			if (passenger.ticket === "firstclass") {
-				alert("Would you like a cocktail or wine?");
+				orderFunction = function() {
+					alert("Would you like a cocktail or wine?");
+				};
 			} else {
-				alert("Your choice is cola or water.");
+				orderFunction = function() {
+					alert("Your choice is cola or water.");
+				};
 			}
+			return orderFunction;
 		}
 
 		function serveCustomer(passenger) {
-			createDrinkOrder(passenger);
+			var getDrinkOrderFunction = createDrinkOrder(passenger);
+			getDrinkOrderFunction();
 			// get dinner order
-			createDrinkOrder(passenger);
-			createDrinkOrder(passenger);
+			getDrinkOrderFunction();
+			getDrinkOrderFunction();
 			// show movie
-			createDrinkOrder(passenger);
+			getDrinkOrderFunction();
 			// pick up trash
 		}
+
+		function servePassengers(passengers) {
+			for (var i = 0; i < passengers.length; i++) {
+				serveCustomer(passengers[i]);
+			}
+		}
+
+		servePassengers(passengers);
 
     </script>
 </head>
