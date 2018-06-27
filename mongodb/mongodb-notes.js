@@ -22,7 +22,13 @@ What you need to know...
 -JavaScript
 -Install Node.js (for npm)
 
-To start MongoDB, type mongod in the console.
+** To start MongoDB, type mongod in the console. **
+
+
+Lesson #3: Connecting to mongoose:
+
+You must tell Mongoose to connect to a db.
+
 
 
 */
