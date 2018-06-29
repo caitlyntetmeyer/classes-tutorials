@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flying First Class</title>
     <script>
-    	
+    	/*
     	var passengers = [ { name: "Jane Doloop", paid: true },
 						   { name: "Dr. Evel", paid: true },
 						   { name: "Sue Property", paid: false },
@@ -47,7 +47,7 @@
 				console.log(passenger.name + " hasn't paid.");
 			}
 		}
-		processPassengers(passengers, printPassenger);
+		processPassengers(passengers, printPassenger); */
 		/*
 		Jane Doloop has paid.
 		Dr. Evel has paid.
@@ -60,7 +60,7 @@
 		var passengers = [ { name: "Jane Doloop", paid: true, ticket: "coach" },
 						   { name: "Dr. Evel", paid: true, ticket: "firstclass" },
 						   { name: "Sue Property", paid: false, ticket: "firstclass" },
-						   { name: "John Funcall", paid: true, ticket: "coach" } ];
+						   { name: "John Funcall", paid: true, ticket: "premium" } ];
 
 
 		function createDrinkOrder(passenger) {
@@ -70,9 +70,32 @@
 				orderFunction = function() {
 					alert("Would you like a cocktail or wine?");
 				};
-			} else {
+			} else if (passenger.ticket === "coach") {
 				orderFunction = function() {
 					alert("Your choice is cola or water.");
+				};
+			} else {
+				orderFunction = function() {
+					alert("Would you like wine? Would you like cola or water?");
+				};
+			}
+			return orderFunction;
+		}
+
+		function createDinnerOrder(passenger) {
+			var orderFunction;
+
+			if (passenger.ticket === "firstclass") {
+				orderFunction = function() {
+					alert("Would you like chicken or pasta?");
+				};
+			} else if (passenger.ticket === "premium") {
+				orderFunction = function() {
+					alert("Would you like a snack box or cheese plate?");
+				};
+			} else {
+				orderFunction = function() {
+					alert("Would you like peanuts or pretzels?");
 				};
 			}
 			return orderFunction;
@@ -80,8 +103,12 @@
 
 		function serveCustomer(passenger) {
 			var getDrinkOrderFunction = createDrinkOrder(passenger);
+			var getDinnerOrderFunction = createDinnerOrder(passenger);
+
 			getDrinkOrderFunction();
-			// get dinner order
+
+			getDinnerOrderFunction();
+			
 			getDrinkOrderFunction();
 			getDrinkOrderFunction();
 			// show movie
