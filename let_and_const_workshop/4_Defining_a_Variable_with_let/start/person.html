@@ -11,12 +11,14 @@
         }
     
         function personDescription(person) {
-            var description = person.first_name;
+          // You can't use const here because it'll throw an error:
+            let description = person.first_name;
+            // let has block-level scoping.
             if(person.role) {
                 description = description + " is a ";
                 description = description + person.role;
             }
-            console.log(description);
+            console.log(description); // Andrew is a Teacher
         }
     
         personDescription(person);
