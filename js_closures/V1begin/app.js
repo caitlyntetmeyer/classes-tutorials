@@ -9,4 +9,5 @@ function countDogs() {
   count += 1;
   return count + ' dogs';
 }
-// Uh-oh, we've introduced a bug!
+
+// closure - a function with access to its own private variables
