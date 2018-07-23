@@ -18,6 +18,11 @@ a {
 
 /* ---- Layout Containers ---- */
 
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
 .main-header {
 	background: #3acec2;
 }
