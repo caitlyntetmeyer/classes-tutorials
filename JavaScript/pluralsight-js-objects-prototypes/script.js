@@ -1,10 +1,15 @@
 'use strict';
 
-var cat = {
-	name: 'Fluffy', 
-	color: 'White',
-	speak: function() { display("Meeooow") }
+function Cat(name, color) {
+	this.name = name
+	this.color = color
 }
-cat.age = 3;
+// new creates a new empty JS object
+var cat = new Cat('Fluffy', 'White');
 
-cat.speak() // Meeooow
+display(cat)
+/* Cat {
+	name: Fluffy
+	color: White
+} */
+
