@@ -1,17 +1,9 @@
 'use strict';
-
-class Cat {
-	constructor(name, color) {
-		this.name = name
-		this.color = color
-	}
-
-	speak() {
-		display('Meeooow')
-	}
+// enumerable means we can loop over them using a for in loop
+var cat = {
+	name: {first:'Fluffy', last: 'LaBeouf'},
+	color: 'White',
 }
 
-var cat = new Cat('Fluffy', 'White')
+Object.defineProperty(cat, 'name', {enumerable: false})
 
-display(cat)
-cat.speak() // Meeooow
