@@ -9,21 +9,16 @@ var products = [
 	{ name: "Water", calories: 0, color: "clear", sold: 62123 }
 ];
 
-// ---
+// Sort in ascending order by number sold
 
-var numbersArray = [60, 50, 62, 58, 54, 54];
-
-// Compare two numbers at a time:
-function compareNumbers(num1, num2) {
-	if (num2 > num1) {
+function compareSold(colaA, colaB) {
+	if (colaA.sold > colaB.sold) {
 		return 1;
-	} else if (num2 === num1) {
+	} else if (colaA.sold === colaB.sold) {
 		return 0;
 	} else {
 		return -1;
 	}
 }
 
-// Sort numbers in descending order:
-numbersArray.sort(compareNumbers);
-console.log(numbersArray); // [62, 60, 58, 54, 54, 50]
+console.log(products.sort(compareSold));
