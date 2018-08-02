@@ -10,7 +10,6 @@ var products = [
 ];
 
 // Sort in ascending order by number sold
-
 function compareSold(colaA, colaB) {
 	if (colaA.sold > colaB.sold) {
 		return 1;
@@ -21,4 +20,12 @@ function compareSold(colaA, colaB) {
 	}
 }
 
-console.log(products.sort(compareSold));
+function printProducts(products) {
+	for (var i = 0; i < products.length; i++) {
+		console.log("Name: " + products[i].name + ", Calories: " + products[i].calories + ", Color: " + products[i].color + ", Sold: " + products[i].sold);
+	}
+}
+// Sort the products in ascending order by number sold
+products.sort(compareSold);
+// Print the results
+printProducts(products);
