@@ -20,6 +20,39 @@ function compareSold(colaA, colaB) {
 	}
 }
 
+// Sort by name
+function compareName(colaA, colaB) {
+	if (colaA.name > colaB.name) {
+		return 1;
+	} else if (colaA.name === colaB.name) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
+
+// Sort by calories
+function compareCalories(colaA, colaB) {
+	if (colaA.calories > colaB.calories) {
+		return 1;
+	} else if (colaA.calories === colaB.calories) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
+
+// Sort by color
+function compareColor(colaA, colaB) {
+	if (colaA.color > colaB.color) {
+		return 1;
+	} else if (colaA.color === colaB.color) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
+
 function printProducts(products) {
 	for (var i = 0; i < products.length; i++) {
 		console.log("Name: " + products[i].name + ", Calories: " + products[i].calories + ", Color: " + products[i].color + ", Sold: " + products[i].sold);
@@ -28,4 +61,16 @@ function printProducts(products) {
 // Sort the products in ascending order by number sold
 products.sort(compareSold);
 // Print the results
+printProducts(products);
+
+products.sort(compareName);
+console.log("Products sorted by name:");
+printProducts(products);
+
+products.sort(compareCalories);
+console.log("Products sorted by calories:");
+printProducts(products);
+
+products.sort(compareColor);
+console.log("Products sorted by color:");
 printProducts(products);
