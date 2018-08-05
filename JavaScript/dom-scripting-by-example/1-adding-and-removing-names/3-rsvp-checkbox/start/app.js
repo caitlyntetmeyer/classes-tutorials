@@ -1,7 +1,6 @@
 const form = document.getElementById('registrar');
 const input = form.querySelector('input');
- const ul = document.getElementById('invitedList');
-
+const ul = document.getElementById('invitedList');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
