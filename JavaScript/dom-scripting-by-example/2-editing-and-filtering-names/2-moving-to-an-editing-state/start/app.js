@@ -4,7 +4,9 @@ const ul = document.getElementById('invitedList');
 
 function createLI(text) {
   const li = document.createElement('li');
-  li.textContent = text;
+  const span = document.createElement('span');
+  span.textContent = text;
+  li.appendChild(span);
   const label = document.createElement('label');
   label.textContent = 'Confirmed';
   const checkbox = document.createElement('input');
@@ -39,16 +41,25 @@ ul.addEventListener('change', (e) => {
     listItem.className = '';
   }
 });
-  
+// Edit
 ul.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') {
     const button = e.target;
     const li = button.parentNode;
     const ul = li.parentNode;
+    const span = li.firstElementChild;
+    const input = document.createElement('input');
     if (button.textContent === 'remove') {
       ul.removeChild(li);
     } else if (button.textContent === 'edit') { 
-      console.log('edit');
+      input.type = 'text';
+      input.value = span.textContent;
+      li.insertBefore(input, span);
+      li.removeChild(span);
+      button.textContent = 'save';
+    } else if (button.textContent === 'save') {
+      input.value = span.textContent;
+      button.textContent = 'edit';
     }
   }
 });  
