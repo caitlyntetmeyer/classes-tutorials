@@ -1,0 +1,46 @@
+A ? makes the preceding character optional:
+toyboats? -> matches toyboat and toyboats, but not toyboatss
+toyboa?ts? -> also matches toybots
+toy ?boats? -> the space is optional
+
+Accepts capital or lower-case "t":
+[Tt]oy ?boats?
+
+Accepts T, t or j as first char:
+[Ttj]oy ?boats?
+
+
+toy-boats would be a match for this:
+[Ttj]oy[- ]?boats?
+
+toy-Boats would be a match for this:
+[Ttj]oy[- ]?[Bb]oats?
+
+1) 
+ladybug
+ladybugs
+lady bugs
+
+lady ?bugs?
+
+2)
+ladybug
+lady bugs
+lazy bug
+lazy lug
+
+la[dz]y ?[bl]ug
+
+3)
+ladybug
+lazy lug
+lazy slug
+hazy slug
+
+[lh]a[dz]y ?s?[bl]ug
+
+4)
+ladybug
+fading rug!
+
+[lf]ad[yi]n?g? ?bug!?
