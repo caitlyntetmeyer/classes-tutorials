@@ -1,0 +1,81 @@
+* -> zero or more
++ -> one or more
+
+
+toy\w+
+
+	toyboat
+	toycar
+
+
+Repetitions:
+	{3}		three
+	{3,}	three or more
+	{3,5}	between three and five
+
+
+\d{3}-\d{2}-\d{4}
+
+	000-35-6548
+	000-67-6587
+
+
+\w{5,9}
+
+	E4763GHC
+	7896TOB3P
+	L0003
+
+
+1 ) \d pieces?
+
+Match:
+8 pieces
+7 piece
+6 pieces
+5 pieces
+4 pieces
+
+Exclude:
+A piece
+A 12345
+
+2 ) \d pie ?.*ces?
+
+Match:
+8 pieces
+7 piece
+6 pieces
+5 pieces
+4 pieces
+2 pie slices
+
+Exclude:
+A piece
+A 12345
+
+3 ) \d+
+
+Match:
+1234
+5678
+84753
+78930
+
+Exclude:
+abcde
+abcde
+power
+bat!
+
+4 ) \d{3}\w[A-Za-z_]+
+
+Match:
+123abc
+333cats
+821_Plants
+769___
+
+Exclude:
+454!_Minutes
+12statues
