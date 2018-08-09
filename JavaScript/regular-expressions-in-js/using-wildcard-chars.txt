@@ -1,0 +1,16 @@
+Instead of using [0-9], you can use \d.
+\ is different depending on where you use it. Usually, it means the following char is special.
+
+To match all alphanumeric chars, use \w. It includes underscores.
+
+To include whitespace chars like spaces, tabs, and new lines, use \s.
+
+Any char -> .
+
+[\da] [A-Za-z]oy[\s-]?[Bb]oat.? 
+	...matches...
+		a toyboat
+		9 toyboat$
+		8 toy    boats
+		3 Toy
+		boats
