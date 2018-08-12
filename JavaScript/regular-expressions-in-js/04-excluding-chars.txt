@@ -1,0 +1,20 @@
+You can exclude any char(s) from a pmatch
+
+[^] negated char set
+[^@] match any char except @
+[^@.] match any char except @ and .
+
+[^@]+ matches all below except the @ sign:
+toy@boat.com
+
++ -> one or more
+
+[^@.] matches all below except for the @ and .:
+toy@boat.com
+
+\d digit		\D not digit
+\w word			\W not word
+\s whitespace	\S not whitespace
+
+\W matches only the @ and .:
+toy@boat.com
