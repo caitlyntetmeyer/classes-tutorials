@@ -3,6 +3,8 @@ toyboats? -> matches toyboat and toyboats, but not toyboatss
 toyboa?ts? -> also matches toybots
 toy ?boats? -> the space is optional
 
+[] means there are options:
+
 Accepts capital or lower-case "t":
 [Tt]oy ?boats?
 

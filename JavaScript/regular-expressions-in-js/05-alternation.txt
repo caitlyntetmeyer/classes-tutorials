@@ -1,0 +1,65 @@
+|	Alternation (or)
+tells the parser to either match one pattern or another
+
+---
+
+toy|sail
+
+toy
+sail
+
+Exclude:
+steam
+tug
+
+---
+
+toy boat|sail boat|tug boat
+
+toy boat
+sail boat
+tug boat
+
+Exclude:
+steam boat
+
+---
+
+1 ) grizzlybear|pandabear
+
+Match:
+grizzlybear
+pandabear
+
+Exclude:
+koalabear
+bear
+
+2 ) firestation|firehouse
+
+Match:
+firestation
+firehouse
+
+Exclude:
+firewalker
+fire
+
+3 ) \w{3,4}house
+
+Match:
+farmhouse
+bighouse
+firehouse
+
+Exclude:
+house
+
+4 ) pro\w{5,7}
+
+Match:
+projector
+protractor
+
+Exclude:
+proctor

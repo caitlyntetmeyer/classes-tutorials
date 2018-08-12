@@ -1,7 +1,7 @@
 Instead of using [0-9], you can use \d.
 \ is different depending on where you use it. Usually, it means the following char is special.
 
-To match all alphanumeric chars, use \w. It includes underscores.
+To match all alphanumeric chars, use \w. It includes underscores, too, because filenames can't have spaces, so sometimes _ is used to indicate a space.
 
 To match whitespace chars like spaces, tabs, and new lines, use \s.
 

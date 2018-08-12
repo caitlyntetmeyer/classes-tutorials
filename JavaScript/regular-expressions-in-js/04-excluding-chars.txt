@@ -29,7 +29,7 @@ dogs
 Exclude:
 aaaaa
 
-2 ) \d+
+2 ) \d{5}
 
 Match:
 34522
