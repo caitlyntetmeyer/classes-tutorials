@@ -1,4 +1,4 @@
-You can exclude any char(s) from a pmatch
+You can exclude any char(s) from a match
 
 [^] negated char set
 [^@] match any char except @
@@ -18,3 +18,44 @@ toy@boat.com
 
 \W matches only the @ and .:
 toy@boat.com
+
+1 ) [^a]+
+
+Match:
+foxes
+jumping
+dogs
+
+Exclude:
+aaaaa
+
+2 ) \d+
+
+Match:
+34522
+72379
+
+Exclude:
+1234k
+5784k
+5784k
+
+3 ) \W
+
+Match *only* the commas:
+pears,
+apples,
+cherries,
+oranges,
+
+4 ) \w+
+
+Match only the text character strings from each line ('html', 'head', etc):
+<html>
+<head>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

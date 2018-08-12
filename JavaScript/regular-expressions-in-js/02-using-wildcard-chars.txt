@@ -3,7 +3,7 @@ Instead of using [0-9], you can use \d.
 
 To match all alphanumeric chars, use \w. It includes underscores.
 
-To include whitespace chars like spaces, tabs, and new lines, use \s.
+To match whitespace chars like spaces, tabs, and new lines, use \s.
 
 Any char -> .
 
