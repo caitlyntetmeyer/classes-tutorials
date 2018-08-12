@@ -1,0 +1,61 @@
+^	beginning of a string
+$	end of a string
+
+^(www\.)?google\.(com|net)$
+
+google.com
+google.net
+www.google.com
+
+Exclude:
+google.org
+wwwgoogle.com
+www.google.
+
+---
+
+1 ) ^tart$
+
+Match:
+tart
+
+Exclude:
+start
+tartan
+
+2 ) ^img_\d{2}\.(jpg|png|gif)$
+
+Match:
+img_01.jpg
+img_02.png
+img_03.gif
+img_04.png
+img_05.gif
+img_06.jpg
+
+Exclude:
+6_img_07.gif
+mov_01.avi
+
+3 ) ^pro(ject|tract)(or|ed)$
+
+Match:
+projector
+protractor
+projected
+
+Exclude:
+proctor
+my projector
+projecting
+projectorlight
+
+4 ) ^34567?$
+
+Match:
+3456
+34567
+
+Exclude:
+23456
+345678
