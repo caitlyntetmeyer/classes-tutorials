@@ -1,0 +1,78 @@
+(sub){2}	matches "sub sub"
+(sub)?pat	matches "pat" and "subpat"
+
+---
+
+(toy|sail|tug) boat
+
+toy boat
+sail boat
+tug boat
+
+Exclude:
+steam boat
+
+---
+
+(www\.)?google\.(com|net)
+	(With the \, we're escaping the .'s normal behavior to make it a literal dot char)
+
+google.com
+google.net
+www.google.com
+
+Exclude: 
+google.org
+
+---
+
+1 ) img_\d{2}.(jpg|png|gif)
+
+Match:
+img_01.jpg
+img_02.png
+img_03.gif
+img_04.png
+img_05.gif
+img_06.jpg
+
+Exclude:
+mov_01.avi
+
+2 ) pro(jec|trac|c)tor
+
+Match:
+projector
+protractor
+proctor
+
+Exclude:
+prospector
+
+3 ) img_(\w{2})(_\d{2})?\.(jpg|png)
+
+Match:
+img_sm_01.jpg
+img_01.jpg
+img_sm_02.jpg
+img_02.jpg
+img_sm_03.jpg
+img_03.jpg
+img_sm_04.png
+img_04.png
+
+Exclude:
+img.gif
+
+4 ) (www\.)?((api\.)?github|teamtreehouse)\.com
+
+Match:
+www.github.com
+github.com
+www.teamtreehouse.com
+teamtreehouse.com
+api.github.com
+
+Exclude:
+jsfiddle.net
+www.jsfiddle.net
