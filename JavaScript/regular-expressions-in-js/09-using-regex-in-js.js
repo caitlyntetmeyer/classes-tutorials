@@ -2,7 +2,7 @@
 
 test() // see if the string you've defined matches the pattern in the reg exp
 // Ex:
-regex.test(testString) // => true if matches/false if not
+regexToMatch.test(testString) // => true if matches/false if not
 
 replace()
 string.replace(regexToMatch, replacementString) // => new string modified to your specs
