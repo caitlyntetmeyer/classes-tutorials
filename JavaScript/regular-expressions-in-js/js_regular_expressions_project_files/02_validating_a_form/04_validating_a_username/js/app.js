@@ -11,11 +11,13 @@ const emailInput = document.getElementById("email");
 
 // Can only contain letters a-z in lowercase
 function isValidUsername(username) {
-  return regex./[a-z]+/(username);
+  return /^[a-z]+$/.test(username);
 }
 
 // Must contain a lowercase, uppercase letter and a number
-function isValidPassword(password) {}
+function isValidPassword(password) {
+  /^$/.test(password)
+}
 
 // The telephone number must be in the format of (555) 555-5555
 function isValidTelephone(telephone) {}
