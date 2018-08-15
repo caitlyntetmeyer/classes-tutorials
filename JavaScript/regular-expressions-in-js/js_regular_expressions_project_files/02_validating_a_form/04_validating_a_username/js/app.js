@@ -16,14 +16,20 @@ function isValidUsername(username) {
 
 // Must contain a lowercase, uppercase letter and a number
 function isValidPassword(password) {
-  /^$/.test(password)
+  return /[a-z]+/.test(password) &&
+  /[A-Z]+/.test(password) &&
+  /[0-9+]/.test(password);
 }
 
 // The telephone number must be in the format of (555) 555-5555
-function isValidTelephone(telephone) {}
+function isValidTelephone(telephone) {
+  return /\(\d{3}\)\s\d{3}-\d{4}/.test(telephone);
+}
 
 // Must be a valid email address
-function isValidEmail(email) {}
+function isValidEmail(email) {
+  return /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
+}
 
 /**
  * 
