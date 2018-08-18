@@ -1,0 +1,63 @@
+Using Replace with Captured Groups
+
+We can use parentheses to group chars together:
+/(www\.)?google.com/
+
+---
+
+() can also store or capture the chars they match.
+
+Let's say we want to reorder this:
+	Joaquin Smith
+
+...to this:
+	Smith, Joaquin
+
+---
+
+/(\w)\w+(\d)/
+   $1    $2
+
+  "string8"
+  (s)tring(8)
+
+  $1 => "s", $2 => "8"
+
+---
+
+replace Method
+
+"Hello, my name is Joel"
+
+/ my \s name \s is \s (\w+)\. /
+
+---
+
+Examples in the console:
+
+let string = 'abc'
+string.replace(/(\w)(\w)(\w)/, '$3 $2 $1')	// c b a
+
+string = '5337'
+let regex = /(\d*)(\d{2})/
+let replacement = '$ $1.$2'
+string.replace(regex, replacement)	// $ 53.37
+
+	BUT $$ means a literal dollar sign should be returned. So to remove that weird space after the $ on line 44, we have to do this: $$$1.$2
+
+replacement = '$$$1.$2'
+string.replace(regex, replacement)	// $53.37
+
+
+
+
+
+
+
+
+
+
+
+
+
+
