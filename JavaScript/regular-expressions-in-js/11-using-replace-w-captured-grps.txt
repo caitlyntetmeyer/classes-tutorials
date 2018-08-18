@@ -27,7 +27,7 @@ Let's say we want to reorder this:
 
 replace Method
 
-"Hello, my name is Joel"
+"Hello, my name is Joel."
 
 / my \s name \s is \s (\w+)\. /
 
