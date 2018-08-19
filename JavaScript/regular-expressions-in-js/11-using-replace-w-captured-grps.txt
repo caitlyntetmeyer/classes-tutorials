@@ -29,14 +29,14 @@ replace Method
 
 "Hello, my name is Joel."
 
-/ my \s name \s is \s (\w+)\. /
+      / my \s name \s is \s (\w+)\. /
 
 ---
 
 Examples in the console:
 
 let string = 'abc'
-string.replace(/(\w)(\w)(\w)/, '$3 $2 $1')	// c b a
+string.replace( /(\w)(\w)(\w)/, '$3 $2 $1' )	// c b a
 
 string = '5337'
 let regex = /(\d*)(\d{2})/
