@@ -1,2 +1,11 @@
 /* Structural Pseudo-classes------------------ */
 
+/* Target the li that's the first child of its parent */
+li:first-child {
+	background: #52bab3;
+	color: white;
+}
+
+li:last-child {
+	border: none;
+}
