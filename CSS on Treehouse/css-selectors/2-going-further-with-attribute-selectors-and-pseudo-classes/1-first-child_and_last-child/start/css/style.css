@@ -9,3 +9,14 @@ li:first-child {
 li:last-child {
 	border: none;
 }
+
+/* Target spans that are the only child of their parent element */
+span:only-child {
+	color: #52bab3;
+	font-size: 1.5em;
+}
+
+/* Target li's that have no content or children */
+li:empty {
+	background: tomato;
+}
