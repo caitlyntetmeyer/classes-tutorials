@@ -23,10 +23,28 @@ a {
 
 /* Substring Matching Attribute Selectors ---- */
 
+/* Begins with */
+a[href^="http:"] {
+	color: #52bab3;
+	text-decoration: none;
+	/* Icons */
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	padding-left: 25px;
+}
 
+/* Ends with */
+a[href$=".pdf"] {
+	background-image: url("../img/icn-pdf.svg");
+}
 
+a[href$=".jpg"] {
+	background-image: url("../img/icn-picture.svg");
+}
 
-
+a[href$=".zip"] {
+	background-image: url("../img/icn-zip.svg");
+}
 
 
 
