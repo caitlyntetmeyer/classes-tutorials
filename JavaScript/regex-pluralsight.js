@@ -1,3 +1,13 @@
+// Regular Expression Fundamentals
+
+// https://app.pluralsight.com/library/courses/regular-expressions-fundamentals/table-of-contents
+
+ 
+
+// Wednesday, August 22, 2018
+
+ 
+
 // Matching a hex code
 
 /^\s*#?([A-F0-9]{6}|[A-F0-9]{3})\s*$/i
@@ -15,6 +25,8 @@
 // [] - any of the chars inside
 
 // {} - the preceding char is repeated the # of times indicated
+
+// | - or (note that it's just one pipe, NOT 2 as in JS)
 
 // i - case insensitive
 
@@ -60,7 +72,7 @@ Meta Characters
 
                              To match a bracket character: [[], or escape it as follows -
 
-                             [A-Z\[]]
+                             [A-Z\[]
 
                              [A-Z\]]
 
@@ -78,11 +90,11 @@ Wildcard: the dot .
 
 Repetition Quantifiers:
 
-              ? zero or one times
+              ? 0 or 1 times
 
-              * zero or more times
+              * 0 or more times
 
-              + one or more times
+              + 1 or more times
 
               {n} exactly n times
 
@@ -148,12 +160,129 @@ Anchors
 
  
 
-Word Boundaries - \b
+Word Boundaries (locale dependent) - \b
 
               Between a word char and a non-word char (semicolon, exclamation point, space, etc.)
 
               To match the word "be" - /\bbe\b/
 
-             
+*/
+
+ 
+
+// Friday, August 24, 2018
+
+ 
+
+/* Backslash Escaping
+
+              -Remove special meaning from meta-chars
+
+              -Give special meaning to ordinary chars
+
+ 
+
+              Escaping Meta Characters
+
+                             Special Meaning: [ ] ( ) | . ? * + { } ^ $ \    / (delimiter)
+
+                             Literals: \[ \] \( \) \| \. \? \* \+ \{ \} \^ \$ \\          \/
+
+                             It's especially important to escape the dot because you won't receive an error if you forget to!
+
+ 
+
+              Trick to avoid escaping: Put them in a character class
+
+                             Ex: [)]
+
+ 
+
+              Giving Special Meaning to Ordinary Chars
+
+                             Ex: /s - white space
+
+ 
+
+Matching Rules
+
+              Left to right, char to char
+
+              A match is always favored over a non-match
+
+              A RegEx will try everything possible before giving up
+
+              PCRE: first match; POSIX: left-most longest match
+
+              Mind precedence: () > ?*+{} > ab > |
+
+              Avoid backtracing by avoiding using the dot wildcard; be specific;
+
+                             use negated char classes where possible; apply non-greedy quantifiers where applicable */
+
+ 
+
+/* Shortcodes, Modifiers, and Delimiters
+
+ 
+
+Common Shortcodes
+
+              [0-9] ->                \d
+
+              [A-Za-z0-9_] -> \w
+
+              [\t\f\r\n] ->        \s
+
+ 
+
+Negated Shortcodes
+
+              [^0-9] ->                             \D
+
+              [^A-Za-z0-9_] -> \W
+
+              [^\t\f\r\n] ->       \S
+
+ 
+
+PCRE 7.2+ Shortcodes
+
+              [\t\f]  -> \h
+
+              [\r\n]  -> \v
+
+              [^\t\f] -> \H
+
+              [^\r\n] -> \V
+
+ 
+
+Unicode Shortcode Syntax
+
+              Positive: \p{Identifier}
+
+              Negative: \P{Identifier}
+
+              Capitalization matters.
+
+ 
+
+Modifiers - a way to change the standard behavior of the Regex enginer for one particular expression, or part of one
+
+              Implemented inconsistently
+
+              g - global - returns all possible matches (non-overlapping)
+
+              i - case-insensitive
+
+              m - multi-line - affects ^ and $ behavior for each new line
+
+              s - dotall or single line - affects the dot to match \n
+
+              x - extended - ignore whitespace & # to end of line
+
+ 
 
 */
+
