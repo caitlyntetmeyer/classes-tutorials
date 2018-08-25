@@ -1,1 +1,16 @@
 /* UI element states pseudo-classes ------------ */
+
+input:focus,
+textarea:focus {
+	border-color: #52bab3;
+}
+
+/*All inputs that are in a disabled state*/
+input:disabled {
+	background: #ddd;
+}
+
+/*For inputs of type checkbox - when the checkbox is checked, select the adjacent label*/
+input[type="checkbox"]:checked + label {
+	font-weight: bold;
+}
