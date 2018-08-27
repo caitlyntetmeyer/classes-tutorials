@@ -112,7 +112,7 @@ To speed up your regex:
 
  
 
-Alternation |
+Alternation - |
 
               Separates branches
 
@@ -268,7 +268,7 @@ Unicode Shortcode Syntax
 
  
 
-Modifiers - a way to change the standard behavior of the Regex enginer for one particular expression, or part of one
+Modifiers - a way to change the standard behavior of the Regex enginer for one particular expression, or part of one.
 
               Implemented inconsistently
 
@@ -280,9 +280,32 @@ Modifiers - a way to change the standard behavior of the Regex enginer for one p
 
               s - dotall or single line - affects the dot to match \n
 
-              x - extended - ignore whitespace & # to end of line
+              x - extended - ignore whitespace & #, to the end of the line
+
+ 
+
+Inline Modifiers
+
+              Setting: (?i)
+
+              Unsetting: (?-i)
+
+              Combined: (?im-sx)
+
+              Apply to subpattern (non-capturing): (?i:subp)
+
+ 
+
+Delimiters /
+
+              /[a-z0-9]+/im
+
+              Identify the start and end of a regular expression
+
+              Not always needed
+
+              In some cases, you can choose your own delimiters. Ex: `http://\p{L}+\.[a-z]+/`
 
  
 
 */
-
