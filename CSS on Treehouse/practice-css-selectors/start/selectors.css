@@ -3,33 +3,62 @@
 ========================================================= */
 
 /* Change the color of all list items inside an unordered list */
-
+ul li {
+	color: red;
+}
 
 
 /* Remove the text decoration from navigation links, and change their color when hovered */
+nav a {
+	text-decoration: none;
+}
 
+nav a:hover {
+	color: gray;
+}
 
 
 /* Create hover and visited styles for all links inside 'main' */
+main a:hover {
+	color: pink;
+}
 
+main a:visited {
+	color: purple;
+}
 
 
 /* Change the background color of the submit button when active */
-
+input[type="submit"]:active {
+	background-color: green;
+}
 
 
 /* Give the text field a blue border upon focus */
-
+input[type="text"]:focus {
+	border: 1px solid blue;
+}
 
 
 /* Give the 'span' tag in the footer a meaningful class name and reduce its font size */
-
+.small {
+	font-size: .75em;
+}
 
 
 /* Give the 'img' tag in the header an ID and set its width to 190px */
-
+#bookworm-img {
+	width: 190px;
+}
 
 
 /* Target all heading tags on the page and set their font family to 'Bree Serif', serif */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Bree Serif', serif;
+}
 
