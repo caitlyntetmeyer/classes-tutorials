@@ -8,4 +8,6 @@ $pdfs.attr('download', true);
 $secureLinks.addClass('secure');
 $pdfs.addClass('pdf');
 
-
+$pdfs.on('click', function() {
+	
+});
