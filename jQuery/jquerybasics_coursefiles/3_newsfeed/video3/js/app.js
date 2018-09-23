@@ -5,3 +5,5 @@ const $pdfs = $('a[href$=".pdf"]');
 $secureLinks.attr('target', '_blank');
 $pdfs.attr('download', true);
 
+$secureLinks.addClass('secure');
+$pdfs.addClass('pdf');
