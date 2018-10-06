@@ -1,7 +1,7 @@
 //1. Add a "featured" tag to the second item in the list: 
 $secondItem = $('li a[href*="portofcallnola"]');
   //  Append a new span element containing the word "Featured" to the list item
-  $featuredSpan = $secondItem.append('<span>Featured</span>');
+  $featuredSpan = $secondItem.append(' <span>Featured</span>');
   //  Add a class of "featured" to the new span element. 
   $featuredSpan.addClass('featured');
 //2. Add a class of "new" to the last item in the list. You can traverse to the last item or find a jQuery method that helps you select the last item in the list. 
