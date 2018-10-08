@@ -38,14 +38,37 @@ Focus Your Mind, Improve Your Learning -
 
 	Prepare your space
 		-Close applications you don't need and turn off notifications
-		-Wear hdeadphones - listen to nature sounds or white noise
+		-Wear headphones - listen to nature sounds or white noise
 
 	Learn sth new before bed
 	Get started! Work on sth you've been putting off for just 5 minutes
 
-3 Ways to Build a Habit of Learning - 
+Ways to Build a Habit of Learning - 
 	
-	
+	Spread your learning over the week - the more often, the better, but 3 times a week is good. 15-30 minutes a session is good, or an hour is great. 
+
+Build a Learning Mindset -
+
+	Fixed vs. Growth Mindset:
+
+	A growth mindset sees effort as the key to success.
+	Failure is just one step along the learning path.
+	We can always grow our intelligence and learn new skills.
+	You can exercise your brain to make it stronger!
+
+	Learning is a process that requires effort.
+	You'll need to study and practice to succeed.
+
+	Ask yourself, "How can I improve?"
+	Mistakes are part of learning.
+	Learning takes time. You can't learn programming instantly.
+
+Be a Lifelong Learner -
+
+	Learning sth, even if it becomes obsolete, makes you a better developer.
+	The more you learn, the more easily you'll see similarities between conepts.
+	Treat your available learning time as a limited resource.
+	Lifelong learning isn't a sprint; it's a marathon
 
 
 */
